@@ -11,5 +11,4 @@ int main()
 		printf("b = %d\n", b);
 	}
 	//printf("b = %d", b);
-	///
 }
