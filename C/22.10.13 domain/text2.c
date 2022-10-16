@@ -5,7 +5,7 @@
 //int main()
 //{
 //	int a = 3;
-//	printf("a = %d\n", a);
+//	printf("a = %d\n", a);//全局变量和局部变量冲突时，优先考虑局部变量，a=3
 //	{
 //		int b = 2;
 //		printf("b = %d\n", b);
