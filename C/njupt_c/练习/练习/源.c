@@ -1002,7 +1002,7 @@
 
 
 
-
+/*
 #include<stdio.h>
 #include<stdlib.h>
 #define ERROR 0
@@ -1111,7 +1111,16 @@ int main()
     Delete(&list, 0);
     Destory(&list);
 }
+*/
 
+
+#include<stdio.h>
+int main()
+{
+    char ch = 'a';
+    printf("ch = %d\n", ch);
+    printf("ch = %c\n", ch);
+} 
 
 
 
