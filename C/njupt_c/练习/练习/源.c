@@ -1114,15 +1114,30 @@ int main()
 */
 
 
+//#include<stdio.h>
+//int main()
+//{
+//    char ch = 'a';
+//    printf("ch = %d\n", ch);
+//    printf("ch = %c\n", ch);
+//} 
+
+
+
 #include<stdio.h>
 int main()
 {
-    char ch = 'a';
-    printf("ch = %d\n", ch);
-    printf("ch = %c\n", ch);
-} 
-
-
+    int input = 0;
+    printf("lijun是不是SB(是的话打1，否则打0)\n");
+    scanf("%d", &input);
+    if (input == 1)
+        printf("回答正确！！\n");
+    else if (input == 0)
+        printf("你是SB吧，这都答不对。\n");
+    else
+        printf("你是SB吧，这种答案你也打的出来？？？\n");
+    return 0;
+}
 
 
 
