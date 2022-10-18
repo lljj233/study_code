@@ -1124,25 +1124,43 @@ int main()
 
 
 
-#include<stdio.h>
-int main()
-{
-    int input = 0;
-    printf("lijun是不是SB(是的话打1，否则打0)\n");
-    scanf("%d", &input);
-    if (input == 1)
-        printf("回答正确！！\n");
-    else if (input == 0)
-        printf("你是SB吧，这都答不对。\n");
-    else
-        printf("你是SB吧，这种答案你也打的出来？？？\n");
-    return 0;
-}
+//#include<stdio.h>
+//int main()
+//{
+//    int input = 0;
+//    printf("lijun是不是SB(是的话打1，否则打0)\n");
+//    scanf("%d", &input);
+//    if (input == 1)
+//        printf("回答正确！！\n");
+//    else if (input == 0)
+//        printf("你是SB吧，这都答不对。\n");
+//    else
+//        printf("你是SB吧，这种答案你也打的出来？？？\n");
+//    return 0;
+//}
 
 
 
 
-
+//#include<stdio.h>
+//int main()
+//{
+//    int i = 0;
+//    int j = 0;
+//    char ch[3] = { 'a','b','c' };
+//    int arr[5] = {0,1,2,3,4};
+//    while (i < 5)
+//    {
+//        printf("%d\n", arr[i]);
+//        i++;
+//    }
+//    printf("\n\n");
+//    for (j = 0; j < 5; j++)
+//    {
+//        printf("%d\n", arr[j]);
+//    }
+//    return 0;
+//}
 
 
 
