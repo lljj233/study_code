@@ -1162,6 +1162,55 @@ int main()
 //    return 0;
 //}
 
+//#include<stdio.h>
+//
+//int compare(int a,int b)
+//{
+//    int c = (a > b ? a : b);
+//    return c;
+//}
+//
+//int main()
+//{
+//    int num1 = 0;
+//    int num2 = 0;
+//    int max = 0;
+//    scanf("%d %d", &num1, &num2);
+//    max = compare(num1, num2);
+//    printf("%d", max);
+//    return 0;
+//}
+
+
+
+#include <stdio.h>
+int main()
+{
+    int num1 = 0;
+    int num2 = 0;
+    while (scanf("%d %d", &num1, &num2)!=EOF)
+    {
+        if (num1 == num2)
+        {
+            printf("%d", num1);
+            printf("=");
+            printf("%d\n", num2);
+        }
+        else if (num1 > num2)
+        {
+            printf("%d", num1);
+            printf(">");
+            printf("%d\n", num2);
+        }
+        else
+        {
+            printf("%d", num1);
+            printf("<");
+            printf("%d\n", num2);
+        }
+    }
+    return 0;
+}
 
 
 
