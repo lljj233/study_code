@@ -1183,47 +1183,156 @@ int main()
 
 
 
-#include <stdio.h>
-int main()
-{
-    int num1 = 0;
-    int num2 = 0;
-    while (scanf("%d %d", &num1, &num2)!=EOF)
-    {
-        if (num1 == num2)
-        {
-            printf("%d", num1);
-            printf("=");
-            printf("%d\n", num2);
-        }
-        else if (num1 > num2)
-        {
-            printf("%d", num1);
-            printf(">");
-            printf("%d\n", num2);
-        }
-        else
-        {
-            printf("%d", num1);
-            printf("<");
-            printf("%d\n", num2);
-        }
-    }
-    return 0;
-}
+//#include <stdio.h>
+//int main()
+//{
+//    int num1 = 0;
+//    int num2 = 0;
+//    while (scanf("%d %d", &num1, &num2)!=EOF)
+//    {
+//        if (num1 == num2)
+//        {
+//            printf("%d", num1);
+//            printf("=");
+//            printf("%d\n", num2);
+//        }
+//        else if (num1 > num2)
+//        {
+//            printf("%d", num1);
+//            printf(">");
+//            printf("%d\n", num2);
+//        }
+//        else
+//        {
+//            printf("%d", num1);
+//            printf("<");
+//            printf("%d\n", num2);
+//        }
+//    }
+//    return 0;
+//}
+
+
+
+//#include <stdio.h>
+//
+//int main()
+//{
+//    float a = 0;
+//    float b = 0;
+//    float c = 0;
+//    float d = 0;
+//    float e = 0;
+//    int i = 0;
+//    while (i < 5)
+//    {
+//        scanf("%f %f %f %f %f", &a, &b, &c, &d, &e);
+//        printf("%f ", a);
+//        printf("%f ", b);
+//        printf("%f ", c);
+//        printf("%f ", d);
+//        printf("%f ", e);
+//        printf("%f ", a+b+c+d+e);
+//        i++;
+//    }
+//    return 0;
+//}
+
+
+
+
+//#include <stdio.h>
+//
+//int main()
+//{
+//    int n = 0;
+//    int i = 0;
+//    while (scanf("%d", &n) != EOF )
+//    {
+//        for (i = 0; i < n; i++)
+//        {
+//            printf("*");
+//        }
+//        printf("\n");
+//    }
+//    return 0;
+//}
 
 
 
 
 
+//#include <stdio.h>
+//int main()
+//{
+//    int seconds = 0;
+//    int hours = 0;
+//    int minutes = 0;
+//    scanf("%d", &seconds);
+//    if (seconds > 0 && seconds < 100000000)
+//    {
+//        if (seconds > 3600)
+//        {
+//            hours = seconds / 3600;
+//
+//            {
+//                if (seconds - hours * 3600 > 60)
+//                {
+//                    int a = seconds - hours * 3600;
+//                    minutes = a / 60;
+//                    seconds = a - minutes * 60;
+//                    printf("%d ", hours);
+//                    printf("%d ", minutes);
+//                    printf("%d ", seconds);
+//                }
+//            }
+//        }
+//        else
+//        {
+//            hours = 0;
+//            minutes = seconds / 60;
+//            int b = seconds - minutes * 60;
+//            seconds = b;
+//            printf("%d ", hours);
+//            printf("%d ", minutes);
+//            printf("%d ", seconds);
+//        }
+//    }
+//    else
+//    {
+//        printf("error\n");
+//    }
+//    return 0;
+//}
 
 
 
 
-
-
-
-
+//#include <stdio.h>
+//void fun(int a)
+//{
+//    if (a > 0)
+//    {
+//        printf("1\n");
+//    }
+//    else if (a < 0)
+//    {
+//        printf("0\n");
+//    }
+//    else
+//    {
+//        printf("0.5\n");
+//    }
+//}
+//int main()
+//{
+//    int t = 0;
+//    while (scanf("%d", &t) != EOF)
+//    {
+//        fun(t);
+//    }
+//    return 0;
+//}
 
 
 
