@@ -1,6 +1,7 @@
 //https://www.nowcoder.com/practice/c4ae7bcac7f9491b8be82ee516a94899?tpId=107&&tqId=33304&rp=1&ru=/ta/beginner-programmers&qru=/ta/beginner-programmers/question-ranking
 
 #include <stdio.h>
+
 int main()
 {
     int seconds = 0;

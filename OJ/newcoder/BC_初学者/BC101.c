@@ -1,6 +1,7 @@
 //https://www.nowcoder.com/practice/60d96b08e1cb42e38629d54e37eac008?tpId=107&&tqId=33382&rp=1&ru=/ta/beginner-programmers&qru=/ta/beginner-programmers/question-ranking
 
 #include <stdio.h>
+
 int main()
 {
     float a = 0;
