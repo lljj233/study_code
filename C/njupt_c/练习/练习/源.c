@@ -1341,12 +1341,13 @@ int main()
 //#号控制前导
 //十进制整数1234对应的八进制和十六进制（字母大写），用空格分开，并且要求，在八进制前显示前导0，在十六进制数前显示前导0X。
 //printf可以使用使用格式控制串“%o”、“%X”分别输出八进制整数和十六进制整数，并使用修饰符“#”控制前导显示
-#include<stdio.h>
+//#include<stdio.h>
+//
+//int main(void)
+//{
+//    int a = 1234;
+//    printf("%#o %#X\n", a, a);
+//    return 0;
+//}
 
-int main(void)
-{
-    int a = 1234;
-    printf("%#o %#X\n", a, a);
-    return 0;
-}
 
