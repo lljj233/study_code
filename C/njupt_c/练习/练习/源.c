@@ -1352,16 +1352,87 @@ int main()
 
 
 
-#include <stdio.h>
+//#include <stdio.h>
+//
+//int main()
+//{
+//    int i = 0;
+//    for (i = 0; i < 10; i++)
+//    {
+//        if (i == 5)
+//            printf("%d ", i);
+//    }
+//    return 0;
+//}
 
-int main()
-{
-    int i = 0;
-    for (i = 0; i < 10; i++)
-    {
-        if (i == 5)
-            printf("%d ", i);
-    }
-    return 0;
-}
 
+//打印3的倍数
+//#include <stdio.h>
+//int main()
+//{
+//    int i = 1;
+//    for (i = 1; i < 100; i++)
+//    {
+//        if (i % 3 == 0)
+//        {
+//            printf("%d\n",i);
+//        }
+//    }
+//    return 0;
+//}
+
+//#include<stdio.h>
+//
+//int main()
+//{
+//    int a = 0;
+//    int b = 0;
+//    int c = 0;
+//    scanf("%d %d %d", &a, &b, &c);
+//    if (a > b && a > c && b > c)
+//    {
+//        printf("%d %d %d",a, b, c);
+//    }
+//    else if (a > c && c > b && b > c)
+//    {
+//        printf("%d %d %d",a, c, b);
+//    }
+//    else if (b > a && b > c && a > c)
+//    {
+//        printf("%d %d %d",b, a, c);
+//    }
+//    else if (b > c && b > a && c > a)
+//    {
+//        printf("%d %d %d",b, c, a);
+//    }
+//    else if (c > b && c > a && b > a)
+//    {
+//        printf("%d %d %d",c, b, a);
+//    }
+//    else 
+//    {
+//        printf("%d %d %d",c, a, b);
+//    }
+//    return 0;
+//}
+
+
+
+
+//#include<stdio.h>
+//int main()
+//{
+//    int i = 0;
+//    int j = 0;
+//    for (i = 100; i < 200; i++)
+//    {
+//        for (j = 2; j < i; j++)
+//        {
+//            if (i % j == 0)
+//            {
+//
+//            }
+//        }
+//    }
+//    return 0;
+//}
