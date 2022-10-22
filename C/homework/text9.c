@@ -64,3 +64,45 @@
 //    printf("%d %d %d\n", h, m, s);
 //    return 0;
 //}
+
+
+
+
+//求输出
+//#include <stdio.h>
+//
+//int main()
+//{
+//    int i = 0;
+//    for (i = 0; i < 10; i++)
+//    {
+//        if (i = 5)//不是==
+//            printf("%d ", i);
+//    }
+//    return 0;
+//}
+////打印结果是死循环5
+
+
+
+//求输出
+//#include <stdio.h>
+//int main() {
+//	int x = 3;
+//	int y = 3;
+//	switch (x % 2) {
+//	case 1:
+//		switch (y)
+//		{
+//		case 0:
+//			printf("first");
+//		case 1:
+//			printf("second");
+//			break;
+//		default: printf("hello");
+//		}
+//	case 2:
+//		printf("third");
+//	}
+//	return 0;
+//}
