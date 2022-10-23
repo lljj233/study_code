@@ -87,7 +87,8 @@
 
 //求输出
 //#include <stdio.h>
-//int main() {
+//int main()
+//  {
 //	int x = 3;
 //	int y = 3;
 //	switch (x % 2) {
@@ -105,4 +106,42 @@
 //		printf("third");
 //	}
 //	return 0;
+//}
+
+
+//打印100~200之间的素数
+//#include<stdio.h>
+//int main()
+//{
+//    int i, j;
+//    for (i = 100; i <= 200; i++)
+//    {
+//        for (j = 2; j < i; j++)
+//        {
+//            if (i % j == 0)
+//                break;
+//        }
+//        if (i == j)
+//            printf("%d ", i);
+//    }
+//    printf("\n");
+//    return 0;
+//}
+
+
+
+//打印1000年到2000年之间的闰年
+//#include<stdio.h>
+//int main()
+//{
+//    int i, j;
+//    for (i = 1000; i <= 2000; i++)
+//    {
+//        if( i % 4 == 0 && i % 100 != 0 || i % 400 == 0)
+//        {
+//            printf("%d ", i);
+//        }
+//    }
+//    printf("\n");
+//    return 0;
 //}
