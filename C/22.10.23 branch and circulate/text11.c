@@ -116,3 +116,69 @@
 //	}
 //	return 0;
 //}
+
+
+
+//循环结构
+
+//int main()
+//{
+//	int i = 1;
+//	while (i < 11)
+//	{
+//		if (i == 5)
+//		{
+//			break;//终止本层循环
+//		}
+//		printf("%d ", i);
+//		i++;
+//	}
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	int i = 1;
+//	while (i < 11)
+//	{
+//		if (i == 5)
+//		{
+//			continue;//终止本次循环，跳过后面代码部分，直接跳到语句的判断部分，进行下一次循环的入口判断
+//		}
+//		printf("%d ", i);
+//		i++;
+//	}
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	int ch = 0;
+//	while(ch = getchar() != EOF)
+//	{
+//		putchar(ch);
+//	}
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	char password[20];
+//	printf("输入密码：");
+//	scanf("%s", password);
+//	printf("确认密码(Y/N)");
+//	char ch = getchar();
+//	scanf("%c", &ch);
+//	if (ch == Y)
+//	{
+//		printf("确认成功");
+//	}
+//	else
+//	{
+//		printf("确认失败");
+//	}
+//	return 0;
+//}
