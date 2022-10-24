@@ -48,21 +48,8 @@
 //        printf("%.1lf\n", sum);
 //    }
 //    return 0;
-//}
+}
 
-
-
-//#include<stdio.h>
-//int main()
-//{
-//	int seconds = 0;
-//	scanf("%d", &seconds);
-//	int h = seconds / 3600;
-//	int m = seconds / 60 % 60;
-//	int s = seconds % 60;
-//	printf("%d %d %d", h, m, s);
-//	return 0;
-//}
 
 
 

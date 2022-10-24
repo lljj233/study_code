@@ -1,6 +1,6 @@
-//#define _CRT_SECURE_NO_WARNINGS
-//
-//#include <stdio.h>
+#define _CRT_SECURE_NO_WARNINGS
+
+#include <stdio.h>
 
 //struct STU
 //{
@@ -25,5 +25,28 @@
 //	printf("%s\n", s1.sex);
 //	printf("%d\n", s1.age);
 //
+//	return 0;
+//}
+
+
+
+//struct worker
+//{
+//	char name[20];
+//	int age;
+//	double incomes;
+//};
+//
+//void pri(struct worker* p)
+//{
+//	printf("%s\n", (*p).name);
+//	printf("%d\n", (*p).age);
+//	printf("%.3lf\n", (*p).incomes);
+//}
+//
+//int main()
+//{
+//	struct worker p1 = { "张三",29,2022.2 };
+//	pri(&p1);
 //	return 0;
 //}
