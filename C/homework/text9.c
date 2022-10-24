@@ -52,34 +52,32 @@
 
 
 
-
-//给定秒数 seconds ，把秒转化成小时、分钟和秒。
+//#include<stdio.h>
 //int main()
 //{
-//    int sec = 0;
-//    scanf("%d", &sec);
-//    int h = sec / 60 / 60;
-//    int m = sec / 60 % 60;
-//    int s = sec % 60;
-//    printf("%d %d %d\n", h, m, s);
-//    return 0;
+//	int seconds = 0;
+//	scanf("%d", &seconds);
+//	int h = seconds / 3600;
+//	int m = seconds / 60 % 60;
+//	int s = seconds % 60;
+//	printf("%d %d %d", h, m, s);
+//	return 0;
 //}
-
 
 
 
 //求输出
 //#include <stdio.h>
-//
+
 //int main()
 //{
-//    int i = 0;
-//    for (i = 0; i < 10; i++)
-//    {
-//        if (i = 5)//不是==
-//            printf("%d ", i);
-//    }
-//    return 0;
+//int i = 0;
+//for (i = 0; i < 10; i++)
+//{
+//	if (i = 5)
+//		printf("%d ", i);
+//}
+//return 0;
 //}
 ////打印结果是死循环5
 
@@ -130,6 +128,7 @@
 
 
 
+
 //打印1000年到2000年之间的闰年
 //#include<stdio.h>
 //int main()
@@ -164,5 +163,37 @@
 //{
 //    int m = func(1);
 //    printf("%d", m);
+//    return 0;
+//}
+
+
+
+//写代码将三个整数数按从大到小输出。
+//#include <stdio.h>
+//int main()
+//{
+//    int a = 2;
+//    int b = 3;
+//    int c = 1;
+//    scanf("%d%d%d", &a, &b, &c);
+//    if (a < b)
+//    {
+//        int tmp = a;
+//        a = b;
+//        b = tmp;
+//    }
+//    if (a < c)
+//    {
+//        int tmp = a;
+//        a = c;
+//        c = tmp;
+//    }
+//    if (b < c)
+//    {
+//        int tmp = b;
+//        b = c;
+//        c = tmp;
+//    }
+//    printf("%d %d %d\n", a, b, c);
 //    return 0;
 //}

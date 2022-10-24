@@ -1381,9 +1381,9 @@ int main()
 //    return 0;
 //}
 
-
+//
 //#include<stdio.h>
-
+//
 //int main()
 //{
 //    int a = 0;
@@ -1416,7 +1416,6 @@ int main()
 //    }
 //    return 0;
 //}
-
 
 
 
