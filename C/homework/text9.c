@@ -243,3 +243,46 @@
 //	printf("最大值为:%d", max);
 //	return 0;
 //}
+
+
+//计算1/1-1/2+1/3-1/4+1/5 …… + 1/99 - 1/100 的值，打印出结果
+//#include<stdio.h>
+//int main()
+//{
+//	int i = 0;
+//	double sum1 = 0.0;
+//	double sum2 = 0.0;
+//	double sum = 0.0;
+//	for (i = 1; i < 100; i += 2)
+//	{
+//		sum1 += 1.0 / (i);
+//	}
+//	for (i = 2; i < 101; i += 2)
+//	{
+//		sum2 += 1.0 / (i);
+//	}
+//	sum = sum1 - sum2;
+//	printf("%lf", sum);
+//	return 0;
+//}
+
+
+
+//编写程序数一下 1到 100 的所有整数中出现多少个数字9
+//#include<stdio.h>
+//int main()
+//{
+//	int count = 0;
+//	int i = 0;
+//	for (i = 1; i < 101; i++)
+//	{
+//		if (i % 10 == 9 || i / 10 == 9)
+//		{
+//			printf("%d ", i);
+//			count++;
+//		}
+//	}
+//	printf("\n");
+//	printf("%d", count+1);
+//	return 0;
+//}
