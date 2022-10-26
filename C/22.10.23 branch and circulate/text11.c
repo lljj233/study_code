@@ -156,7 +156,7 @@
 //int main()
 //{
 //	int ch = 0;
-//	while(ch = getchar() != EOF)
+//	while((ch = getchar()) != EOF)
 //	{
 //		putchar(ch);
 //	}
@@ -166,19 +166,24 @@
 
 //int main()
 //{
-//	char password[20];
-//	printf("输入密码：");
-//	scanf("%s", password);
-//	printf("确认密码(Y/N)");
-//	char ch = getchar();
-//	scanf("%c", &ch);
-//	if (ch == Y)
+//	//数组名本来就是地址
+//	char password[20] = { 0 };
+//	int ch = 0;
+//
+//	printf("请输入密码:>");
+//	scanf("%s", password);//123456
+//
+//	//消除\n - 清理缓冲区
+//	while (getchar()!='\n')
 //	{
-//		printf("确认成功");
+//		;
 //	}
+//		
+//	printf("请确认密码(Y/N):>");
+//	ch = getchar();
+//	if (ch == 'Y')
+//		printf("确认成功\n");
 //	else
-//	{
-//		printf("确认失败");
-//	}
+//		printf("确认失败\n");
+//
 //	return 0;
-//}
