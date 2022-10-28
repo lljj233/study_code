@@ -1381,9 +1381,9 @@ int main()
 //    return 0;
 //}
 
-//
+
 //#include<stdio.h>
-//
+
 //int main()
 //{
 //    int a = 0;
@@ -1419,5 +1419,39 @@ int main()
 
 
 
+//计算10的阶乘
+//#include<stdio.h>
+//int main()
+//{
+//    int n = 0;
+//    int i = 0;
+//    int mul = 1;
+//    scanf("%d", &n);
+//    for (i = 1; i <= n; i++)
+//    {
+//        mul *= i;
+//    }
+//    printf("%d\n", mul);
+//    return 0;
+//}
 
 
+
+//计算阶乘相加
+//#include<stdio.h>
+//int main()
+//{
+//    int i = 0;
+//    int n = 0;
+//    int mul = 1;
+//    int sum = 0;
+//    scanf("%d", &n);
+//    for (i = 1; i <= n; i++)
+//    {
+//        mul *= i;
+//        sum += mul;
+//    }
+//    printf("mul=%d\n", mul);
+//    printf("sum=%d\n", sum);
+//    return 0;
+//}
