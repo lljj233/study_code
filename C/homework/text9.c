@@ -286,3 +286,44 @@
 //	printf("%d", count+1);
 //	return 0;
 //}
+
+
+
+//二分查找
+//编写代码在一个整形有序数组中查找具体的某个数。
+//要求：找到了就打印数字所在的下标，找不到则输出：找不到。
+
+//#include<stdio.h>
+//int main()
+//{
+//	int arr[10] = { 3,5,11,48,51,58,69,73,81,99 };
+//	int flag = 0;
+//	int k = 0;
+//	int left = 0;
+//	int right = 9;
+//	scanf("%d", &k);
+//
+//	while (left <= right)
+//	{
+//		int mid = (left + right) / 2;
+//		if (arr[mid] > k)
+//		{
+//			right = mid - 1;
+//		}
+//		else if (arr[mid] < k)
+//		{
+//			left = mid + 1;
+//		}
+//		else
+//		{
+//			printf("找到，下标为%d\n", mid);
+//			flag = 1;
+//			break;
+//		}
+//	}
+//	if (flag == 0)
+//	{
+//		printf("未找到");
+//	}
+//	return 0;
+//}
