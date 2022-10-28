@@ -164,26 +164,170 @@
 //}
 
 
+
 //int main()
 //{
-//	//数组名本来就是地址
-//	char password[20] = { 0 };
-//	int ch = 0;
+//	char password[20] = {0};
+//    int ch = 0;
 //
-//	printf("请输入密码:>");
-//	scanf("%s", password);//123456
+//	printf("请输入密码：");
+//	scanf("%s",password);//数组名是地址，不需要&
 //
-//	//消除\n - 清理缓冲区
-//	while (getchar()!='\n')
+//	//清除缓存区(清理\n)
+//	while ((ch = getchar()) != '\n')
 //	{
 //		;
 //	}
-//		
-//	printf("请确认密码(Y/N):>");
+//
+//	printf("确认密码（Y/N）");
 //	ch = getchar();
 //	if (ch == 'Y')
-//		printf("确认成功\n");
+//	{
+//		printf("确认成功");
+//	}
 //	else
-//		printf("确认失败\n");
-//
+//	{
+//		printf("确认失败");
+//	}
 //	return 0;
+//}
+
+
+
+//for循环
+
+//打印1-10
+//int main()
+//{
+//	int i = 0;
+//	for (i = 1; i < 11; i++)
+//	{
+//		printf("%d ", i);
+//	}
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	int i = 0;
+//	for (i = 1; i < 11; i++)
+//	{
+//		if (i == 5)
+//			//break;//输出1 2 3 4
+//			continue;//输入1 2 3 4 6 7 8 9 10
+//		printf("%d ", i);
+//	}
+//	return 0;
+//}
+
+//int main()
+//{
+//	//int i = 0;
+//	for (int i = 1; i < 11; i++)
+//	{
+//		if (i == 5)
+//			//break;//输出1 2 3 4
+//			continue;//输入1 2 3 4 6 7 8 9 10
+//		printf("%d ", i);
+//	}
+//	return 0;
+//}
+
+
+
+//int main()
+//{
+//	//for循环的初始化，调整和判断3个部分可以省略
+//	//若省略判断部分，则判断恒为真，进入死循环
+//	for (;;)
+//	{
+//		printf("1");
+//	}
+//	return 0;
+//}
+
+
+
+//int main()
+//{
+//  int i = 0;
+//  int j = 0;
+//	for (i = 0; i < 3; i++)
+//	{
+//		for (j = 0; j < 3; j++)
+//		{
+//			printf("A ");//输出9个A
+//		}
+//	}
+//	return 0;
+//}
+
+//int main()
+//{
+//	int i = 0;
+//	int j = 0;
+//	for ( ; i < 3; i++)
+//	{
+//		for ( ; j < 3; j++)
+//		{
+//			printf("A ");//输出3个A
+//		}
+//	}
+//	return 0;
+//}
+
+
+
+//使用多于一个变量控制循环
+//int main()
+//{
+//	int x, y;
+//	for (x = 0, y = 0; x < 2 && y < 5; x++, ++y)
+//	{
+//		printf("A ");//输出2个A
+//	}
+//	return 0;
+//}
+
+
+//求几次循环
+//int main()
+//{
+//	int i, j;
+//	for (i = 0, j = 0; j = 0; i++, j++)
+//		j++;
+//	return 0;
+//}
+//0次循环，因为for循环中判断语句是赋值操作，j=0，即为假，不进入循环
+
+
+
+//do while循环
+//先执行后判断
+
+//打印1-10
+//int main()
+//{
+//	int i = 1;
+//	do
+//	{
+//		printf("%d ", i);
+//		i++;
+//	} while (i < 11);
+//	return 0;
+//}
+
+// int main()
+//{
+//	int i = 1;
+//	do
+//	{
+//		printf("%d ", i);
+//		if (i == 5)
+//			//break;//输出1 2 3 4 5 
+//			continue;//输出1 2 3 4 5 5 5 5 5
+//		i++;
+//	} while (i < 11);
+//	return 0;
+//}
