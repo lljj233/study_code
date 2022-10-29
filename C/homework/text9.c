@@ -327,3 +327,37 @@
 //	}
 //	return 0;
 //}
+
+
+
+//从两端往中间打印
+//#include<stdio.h>
+//#include<string.h>
+//#include<Windows.h>
+//#include<stdlib.h>
+//int main()
+//{
+//	char arr1[] = "Hello World";
+//	char arr2[] = "***********";
+//
+//	int left = 0;
+//	int right = strlen(arr1) - 1;
+//
+//	while (left <= right)
+//	{
+//		arr2[left] = arr1[left];
+//		arr2[right] = arr1[right];
+//
+//		printf("%s\n", arr2);
+//
+//		Sleep(1000);  //Sleep函数是实现睡眠的函数，单位是毫秒，在windows环境是S要大写，在linux里s要小写
+//		              //即在1000ms后执行下一步
+//		system("cls");//system也是一个库函数,可以执行系统命令。cls是清空屏幕的指令
+//
+//		left++;
+//		right--;
+//	}
+//	printf("%s\n", arr2);
+//
+//	return 0;
+//}
