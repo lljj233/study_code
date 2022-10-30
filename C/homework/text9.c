@@ -403,69 +403,69 @@
 
 
 //猜数字游戏的实现
-#include<stdio.h>
-#include<time.h>
-#include<stdlib.h>
-#include<Windows.h>
-void game()
-{
-	//rand函数是用来生成随机数的一个函数，头文件是stdlib.h
-    //rand函数返回的是0-rand_max(32767)的一个随机数
-    //rand函数在使用之前要使用一个srand函数来设置随机数的生成器
-    //srand函数在程序中只调用一次即可，不需要重复调用
-    //c语言中，time（）函数会返回时间戳，头文件是time.h，利用它来生成随机数
-
-	int ret = rand() % 100 + 1;
-	int num = 0;
-	while(1)
-	{
-		printf("请输入数字");
-		scanf("%d", &num);
-		if (num > ret)
-		{
-			printf("猜大了\n");
-		}
-		else if (num < ret)
-		{
-			printf("猜小了\n");
-		}
-		else
-		{
-			printf("猜对了\n");
-			Sleep(1000);
-			system("cls");
-			break;
-		}
-	}
-}
-void menu()
-{
-	printf("------------------\n");
-	printf("----  1.play  ----\n");
-	printf("----  2.exit  ----\n");
-	printf("------------------\n");
-}
-int main()
-{
-	int input = 0;
-	srand((unsigned int)time(NULL));
-	do
-	{
-		menu();
-		printf("请输入选项");
-		scanf("%d", &input);
-		switch (input)
-		{
-		case 1:
-			game();
-			break;
-		case 2:
-			printf("离开游戏\n");
-          	break;
-		default:
-			printf("请重新输入\n");
-			break;
-		}
-	} while (input);
-	return 0;
-}
+//#include<stdio.h>
+//#include<time.h>
+//#include<stdlib.h>
+//#include<Windows.h>
+//void game()
+//{
+//	  //rand函数是用来生成随机数的一个函数，头文件是stdlib.h
+//    //rand函数返回的是0-rand_max(32767)的一个随机数
+//    //rand函数在使用之前要使用一个srand函数来设置随机数的生成器
+//    //srand函数在程序中只调用一次即可，不需要重复调用
+//    //c语言中，time（）函数会返回时间戳，头文件是time.h，利用它来生成随机数
+//
+//	int ret = rand() % 100 + 1;
+//	int num = 0;
+//	while(1)
+//	{
+//		printf("请输入数字");
+//		scanf("%d", &num);
+//		if (num > ret)
+//		{
+//			printf("猜大了\n");
+//		}
+//		else if (num < ret)
+//		{
+//			printf("猜小了\n");
+//		}
+//		else
+//		{
+//			printf("猜对了\n");
+//			Sleep(1000);
+//			system("cls");
+//			break;
+//		}
+//	}
+//}
+//void menu()
+//{
+//	printf("------------------\n");
+//	printf("----  1.play  ----\n");
+//	printf("----  2.exit  ----\n");
+//	printf("------------------\n");
+//}
+//int main()
+//{
+//	int input = 0;
+//	srand((unsigned int)time(NULL));
+//	do
+//	{
+//		menu();
+//		printf("请输入选项");
+//		scanf("%d", &input);
+//		switch (input)
+//		{
+//		case 1:
+//			game();
+//			break;
+//		case 2:
+//			printf("离开游戏\n");
+//          	break;
+//		default:
+//			printf("请重新输入\n");
+//			break;
+//		}
+//	} while (input);
+//	return 0;
+//}

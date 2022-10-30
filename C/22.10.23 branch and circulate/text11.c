@@ -331,3 +331,16 @@
 //	} while (i < 11);
 //	return 0;
 //}
+
+
+//goto语句(很少使用)
+
+//int main()
+//{
+//flag:
+//	printf("AAA\n");
+//	goto flag;
+//	return 0;
+//}
+
+//在多层循环嵌套的时候使用gato可以很快跳出循环，不需要使用多个break
