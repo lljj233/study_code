@@ -469,3 +469,33 @@
 //	} while (input);
 //	return 0;
 //}
+
+
+
+//一个关机程序
+//执行程序后60s后关机
+//若输入：abc，则取消关机
+//shutdown -s -t 60
+//shutdown _a   取消关机
+
+//#include<stdio.h>
+//#include<string.h>
+//#include<stdlib.h>
+//int main()
+//{
+//	char input[10] = { 0 };
+//	system("shutdown -s -t 60");
+//again:
+//	printf("电脑将在60s后关机，输入“abc取消关机”\n");
+//	scanf("%s", input);
+//	if (strcmp(input, "abc") == 0)
+//	{
+//		system("shutdown -a");
+//		printf("已取消关机");
+//	}
+//	else
+//	{
+//		goto again;
+//	}
+//	return 0;
+//}
