@@ -499,3 +499,44 @@
 //	}
 //	return 0;
 //}
+
+
+
+//求两个数的最大公约数
+//(1)
+//#include<stdio.h>
+//int main()
+//{
+//	int a = 0;
+//	int b = 0;
+//	scanf("%d %d", &a, &b);
+//	int min = (a > b ? a : b);
+//	//假设最大公约数就是a和b的较小值
+//	while (1)
+//	{
+//		if (a % min == 0 && b % min == 0)
+//		{
+//			break;
+//		}
+//		min--;
+//	}
+//	printf("%d\n", min);
+//	return 0;
+//}
+
+//(2)
+//#include<stdio.h>
+//int main()
+//{
+//	int a = 0;
+//	int b = 0;
+//	scanf("%d %d", &a, &b);
+//	int mcd = 0;
+//	while (mcd=a%b)
+//	{
+//		a = b;
+//		b = mcd;
+//	}
+//	printf("%d\n", b);
+//	return 0;
+//}
