@@ -1472,3 +1472,26 @@ int main()
 //    }
 //    printf("%ld", sum);
 //}
+
+
+#include<stdio.h>
+void func(int max)
+{
+    int i = 0;
+    int j = 0;
+    for (i = 1; i <= max; i++)
+    {
+        for (j = 1; j <= i; j++)
+        {
+            printf("%d*%d=%d  ", j, i, j * i);
+        }
+        printf("\n");
+    }
+}
+int main()
+{
+    int n = 0;
+    scanf("%d", &n);
+    func(n);
+    return 0;
+}

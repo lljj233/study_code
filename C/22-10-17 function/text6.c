@@ -22,6 +22,8 @@
 //}
 
 
+//库函数
+
 //strcpy函数  拷贝字符串函数
 //#include<stdio.h>
 //#include<string.h>
@@ -47,4 +49,26 @@
 //	memset(arr, 'x', 5);
 //	printf("%s\n", arr);
 //	return 0;
+//}
+
+
+//自定义函数
+
+
+//#include<stdio.h>
+//void swap(int* x, int* y)
+//{
+//    int temp = *x;
+//    *x = *y;
+//    *y = temp;
+//}
+//int main()
+//{
+//    int a = 0;
+//    int b = 0;
+//    scanf("%d %d", &a, &b);
+//    swap(&a,&b);
+//    printf("%d,%d", a, b);
+//    //函数调用的时候实参传递给形参，这时形参是实参的一份临时拷贝，对形参的修改不影响实参
+//    return 0;
 //}
