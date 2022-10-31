@@ -39,3 +39,12 @@
 //}
 
 
+//memset  修改前n项字符串
+//int main()
+//{
+//	char arr[] = "Hello World";
+//	printf("%s\n", arr);
+//	memset(arr, 'x', 5);
+//	printf("%s\n", arr);
+//	return 0;
+//}
