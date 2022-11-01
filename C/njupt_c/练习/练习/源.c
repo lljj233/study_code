@@ -1474,24 +1474,30 @@ int main()
 //}
 
 
-#include<stdio.h>
-void func(int max)
-{
-    int i = 0;
-    int j = 0;
-    for (i = 1; i <= max; i++)
-    {
-        for (j = 1; j <= i; j++)
-        {
-            printf("%d*%d=%d  ", j, i, j * i);
-        }
-        printf("\n");
-    }
-}
-int main()
-{
-    int n = 0;
-    scanf("%d", &n);
-    func(n);
-    return 0;
-}
+//用函数判断是否为素数
+//#include<math.h>
+//#include<stdio.h>
+//int judgement(int n)
+//{
+//    int j = 0;
+//    for (j = 2; j <= sqrt(n); j++)
+//    {
+//        if (n % j == 0)
+//        {
+//            return 0;//不是素数
+//        }
+//    }
+//    return 1;//是素数
+//}
+//int main()
+//{
+//    int i = 0;
+//    for (i = 100; i <= 200; i++)
+//    {
+//        if (judgement(i))
+//        {
+//            printf("%d ", i);
+//        }
+//    }
+//    return 0;
+//}
