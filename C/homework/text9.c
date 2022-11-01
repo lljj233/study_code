@@ -1,4 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS
+#define _CRT_SECURE_NO_WARNINGS 1
 
 #include <stdio.h>
 
@@ -540,3 +540,54 @@
 //	printf("%d\n", b);
 //	return 0;
 //}
+
+
+
+//通过函数实现一个整型数组的二分查找
+#include<stdio.h>
+int binary_search(int arr[], int k, int sz)
+{
+	int left = 0;
+	int right = sz - 1;
+
+	while (left <= right)
+	{
+		int mid = (left + right) / 2;
+		if (arr[mid] < k)
+		{
+			left = mid + 1;
+		}
+		else if (arr[mid] > k)
+		{
+			right = mid - 1;
+		}
+		else
+		{
+			return mid;
+		}
+	}
+	return -1;//找不到
+}
+
+int main()
+{
+	int arr[] = { 1,2,3,4,5,6,17,18,19,20,21 };//10
+	//0~9
+	int k = 21;
+	//找到了就返回下标
+	//找不到返回-1
+	//计算数组的元素个数
+	// 
+	//printf("%d\n", sizeof(arr));//40,这里计算整个数组的大小，单位是字节
+	//printf("%d\n", sizeof(arr[0]));//4，这里计算数组第一个元素的大小，单位是字节
+	int sz = sizeof(arr) / sizeof(arr[0]);
+	int pos = binary_search(arr, k, sz);
+	if (-1 == pos)
+		printf("找不到\n");
+	else
+		printf("找到了，下标是:%d\n", pos);
+
+	return 0;
+}
+
+
