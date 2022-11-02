@@ -50,3 +50,17 @@
 //    //函数调用的时候实参传递给形参，这时形参是实参的一份临时拷贝，对形参的修改不影响实参
 //    return 0;
 //}
+
+
+//函数返回值不写时默认返回int类型,要写清楚是否有返回值和是否需要传参
+#include<stdio.h>
+test()
+{
+	printf("avc\n");
+}
+int main()
+{
+	int a = test();
+	printf("%d", a);
+	return 0;
+}
