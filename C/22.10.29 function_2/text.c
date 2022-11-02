@@ -75,3 +75,25 @@
 //}
 
 
+//函数的声明和定义
+//定义也是一种特殊的声明
+//#include<stdio.h>
+//int add(int x, int y);//函数的声明
+//
+//int mul(int x, int y)//函数的定义
+//{
+//	return x * y;
+//}
+//
+//int main()
+//{
+//	int a = add(4, 5);
+//	int b = mul(4, 5);
+//	printf("%d\n", b);
+//	printf("%d\n", a);
+//	return 0;
+//}
+//int add(int x, int y)
+//{
+//	return x + y;
+//}
