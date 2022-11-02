@@ -131,3 +131,26 @@
 //	Print(num);
 //	return 0;
 //}
+
+
+//编写函数求字符串长度
+#include<stdio.h>
+#include<string.h>
+int my_strlen(char* str)
+{
+	int count = 0;
+	while (*str != '\0')
+	{
+		count++;
+		str++;//指针字符+1，向后跳一个字符
+		      //整型指针+1，向后跳一个整型，也就是四个字节
+	}
+	return count;
+}
+int main()
+{
+	char arr[] = "Hello";
+	int len = my_strlen(arr);
+	printf("%d", len);
+	return 0;
+}
