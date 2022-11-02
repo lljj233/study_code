@@ -97,3 +97,18 @@
 //{
 //	return x + y;
 //}
+
+
+//一般情况下，声明放在头文件里(add.h),函数实现在另一个源文件(add.c)
+//#include"add.h" //用双引号引头文件
+//int main()
+//{
+//	int a = 0;
+//	int b = 0;
+//	scanf("%d %d", &a, &b);
+//	int ret = add(a, b);
+//	printf("%d", ret);
+//	return 0;
+//}
+
+
