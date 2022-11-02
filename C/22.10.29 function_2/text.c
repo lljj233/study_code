@@ -53,14 +53,23 @@
 
 
 //函数返回值不写时默认返回int类型,要写清楚是否有返回值和是否需要传参
-#include<stdio.h>
-test()
-{
-	printf("avc\n");
-}
-int main()
-{
-	int a = test();
-	printf("%d", a);
-	return 0;
-}
+//#include<stdio.h>
+//test()
+//{
+//	printf("avc\n");
+//}
+//int main()
+//{
+//	int a = test();
+//	printf("%d", a);
+//	return 0;
+//}
+
+
+//链式访问  把一个函数的返回值作为另一个函数的参数
+//#include<stdio.h>
+//int main()
+//{
+//	printf("%d", printf("%d", printf("%d", 58)));//printf函数返回值是打印在屏幕上的字符个数
+//	return 0;
+//}
