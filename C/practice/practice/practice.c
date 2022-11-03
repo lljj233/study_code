@@ -371,18 +371,40 @@
 //}
 
 
+//#include<stdio.h>
+//int Fun(int n)
+//{
+//    if (n == 5)
+//        return 2;
+//    else
+//        return 2 * Fun(n + 1);
+//}
+//int main()
+//{
+//    int m = Fun(2);
+//    printf("%d", m);
+//    return 0;
+//}
 
-#include<stdio.h>
-int Fun(int n)
-{
-    if (n == 5)
-        return 2;
-    else
-        return 2 * Fun(n + 1);
-}
-int main()
-{
-    int m = Fun(2);
-    printf("%d", m);
-    return 0;
-}
+
+//#include<stdio.h>
+//int main()
+//{
+//	int arr[10] = { 0 };
+//	int i = 0;
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	for (i = 0; i < sz; i++)
+//	{
+//		scanf("%d", &arr[i]);
+//	}
+//	int max = arr[0];
+//	for (i = 1; i < sz; i++)
+//	{
+//		if (arr[i] > max)
+//		{
+//			max = arr[i];
+//		}
+//	}
+//	printf("max=%d", max);
+//	return 0;
+//}
