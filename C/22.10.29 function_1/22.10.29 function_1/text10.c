@@ -178,7 +178,7 @@
 //}
 
 
-//利用编写函数求字符串长度
+//利用递归编写函数求字符串长度
 //#include<stdio.h>
 //#include<string.h>
 //int my_strlen(char* str)

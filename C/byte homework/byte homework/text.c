@@ -613,3 +613,22 @@
 //	printf("%d\n", ret);
 //	return 0;
 //}
+
+
+//递归方式实现打印一个整数的每一位
+//#include<stdio.h>
+//void func(int i)
+//{
+//	if (i > 9)
+//	{
+//		func(i / 10);
+//	}
+//	printf("%d ", i % 10);
+//}
+//int main()
+//{
+//	int a = 0;
+//	scanf("%d", &a);
+//	func(a);
+//	return 0;
+//}
