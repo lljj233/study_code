@@ -444,3 +444,19 @@
 //	return 0;
 //}
 
+
+//º¯ÊıÕ»Ö¡
+//#include<stdio.h>
+//int func(int x, int y)
+//{
+//	int z = x + y;
+//	return z;
+//}
+//int main()
+//{
+//	int a = 10;
+//	int b = 20;
+//	int c = 0;
+//	c = func(a, b);
+//	return 0;
+//}
