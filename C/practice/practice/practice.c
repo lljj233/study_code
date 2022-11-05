@@ -460,3 +460,30 @@
 //	c = func(a, b);
 //	return 0;
 //}
+
+
+//将参数字符串中的字符反向排列
+
+//非递归
+//#include<stdio.h>
+//#include<string.h>
+//void func(char* arr)
+//{
+//	int left = 0;
+//	char right = strlen(arr) - 1;
+//	while (left < right)
+//	{
+//		int temp = arr[left];
+//		arr[left] = arr[right];
+//		arr[right] = temp;
+//		left++;
+//		right--;
+//	}
+//}
+//int main()
+//{
+//	char arr[] = "abcdef";
+//	func(arr);
+//	printf("%s\n", arr);
+//	return 0;
+//}
