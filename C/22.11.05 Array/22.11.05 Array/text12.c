@@ -43,3 +43,66 @@
 //}
 
 
+//一维数组
+//1. 数组是有下标的，下标是从0开始的
+//2. [] 下标访问操作符
+
+//#include<stdio.h>
+//int main()
+//{
+//	int arr[10] = {1,2,3,4,5,6,7,8,9,10};
+//	//按照顺序打印数组
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	int i = 0;
+//	for (i = 0; i < sz; i++)
+//	{
+//		printf("%d ", arr[i]);
+//	}
+//	printf("\n");
+//	//倒序打印
+//	for (i = sz-1; i >=0; i--)
+//	{
+//		printf("%d ", arr[i]);
+//	}
+//	printf("\n");
+//
+//	//跳着打印
+//	for (i = 0; i<sz; i+=2)
+//	{
+//		printf("%d ", arr[i]);
+//	}
+//	return 0;
+//}
+
+
+//一维数组的存储
+//1.一维数组在内存中是连续存放的
+//2.随着数组下标的增长，数组的地址由低到高变化
+
+//#include<stdio.h>
+//int main()
+//{
+//	int arr[10] = { 1,2,3,4,5,6,7,8,9,10 };
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	int i = 0;
+//	int* p = &arr[0];
+//
+//	for (i = 0; i < sz; i++)
+//	{
+//		printf("%d ", *(p + i));
+//	}
+//
+//	for (i = 0; i < sz; i++)
+//	{
+//		printf("%d ", arr[i]);
+//	}
+//
+//	for (i = 0; i < sz; i++)
+//	{
+//		printf("&arr[%d] = %p\n", i, &arr[i]);
+//	}
+//	return 0;
+//}
+
+
+
