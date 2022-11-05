@@ -97,9 +97,7 @@
 //}
 
 
-//编写一个函数 reverse_string(char * string)（递归实现）
-//实现：将参数字符串中的字符反向排列，不是逆序打印。
-//要求：不能使用C函数库中的字符串操作函数。
+//利用递归逆序打印字符串
 //#include<stdio.h>
 //void reverse_string(char* string)
 //{
@@ -120,22 +118,61 @@
 
 
 //利用递归计算n的k次方
-#include<stdio.h>
-double Pow(int n, int k)
-{
-	if (k == 0)
-		return 1.0;
-	else if (k > 0)
-		return n * Pow(n, k - 1);
-	else
-		return 1.0 / Pow(n, -k);
-}
-int main()
-{
-	int n = 0;
-	int k = 0;
-	scanf("%d %d", &n, &k);
-	double ret = Pow(n, k);
-	printf("%lf\n", ret);
-	return 0;
-}
+//#include<stdio.h>
+//double Pow(int n, int k)
+//{
+//	if (k == 0)
+//		return 1.0;
+//	else if (k > 0)
+//		return n * Pow(n, k - 1);
+//	else
+//		return 1.0 / Pow(n, -k);
+//}
+//int main()
+//{
+//	int n = 0;
+//	int k = 0;
+//	scanf("%d %d", &n, &k);
+//	double ret = Pow(n, k);
+//	printf("%lf\n", ret);
+//	return 0;
+//}
+
+
+
+//编写一个函数 reverse_string(char * string)（递归实现）
+//实现：将参数字符串中的字符反向排列，不是逆序打印。
+//要求：不能使用C函数库中的字符串操作函数。
+//#include<stdio.h>
+//int Strlen(char* str)
+//{
+//	int count = 0;
+//	while (*str != '\0')
+//	{
+//		count++;
+//		str++;
+//	}
+//	return count;
+//}
+//
+//void reverse_string(char* str)
+//{
+//	int len = Strlen(str);
+//	char tmp = *str;
+//	*str = *(str + len - 1);
+//	*(str + len - 1) = '\0';
+//	if(Strlen(str+1)>=2)
+//		reverse_string(str+1);
+//	
+//	*(str + len - 1) = tmp;
+//}
+//
+//int main()
+//{
+//	char arr[] = "abcdef";//fedcba
+//	reverse_string(arr);//arr是数组名，数组名是数组首元素的地址
+//
+//	printf("%s\n", arr);//fedcba
+//
+//	return 0;
+//}
