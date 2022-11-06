@@ -742,3 +742,19 @@
 //	print(arr);
 //	return 0;
 //}
+
+
+//#include<stdio.h>
+//int main()
+//{
+//	char acX[] = "abcdefg";
+//	char acY[] = { 'a','b','c','d','e','f','g' };
+//
+//	printf("sizeof(acX)=%d\n", sizeof(acX));//数组中总共有8个元素，分别是：'a','b','c','d','e','f','g','\0'
+//	printf("sizeof(acY)=%d\n", sizeof(acY));//数组中总共有7个元素，分别是：'a','b','c','d','e','f','g'
+//
+//	printf("strlen(acX)=%d\n", strlen(acX));
+//	printf("strlen(acY)=%d\n", strlen(acY));
+//	//strlen求的是字符串长度，从首元素开始计算，遇见‘\0’停止，由于acY数组没有'\0‘，所以strlen(acY)的结果是个随机值
+//	return 0;
+//}
