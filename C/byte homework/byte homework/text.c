@@ -632,3 +632,113 @@
 //	func(a);
 //	return 0;
 //}
+
+
+//求输出
+//#include <stdio.h>
+//int main()
+//{
+//    int arr[] = { 1,2,(3,4),5 };
+//    printf("%d\n", sizeof(arr));
+//    return 0;
+//}
+
+
+//求输出
+//#include <stdio.h>
+//int main()
+//{
+//    char str[] = "hello bit";
+//    printf("%d %d\n", sizeof(str), strlen(str));
+//    return 0;
+//}
+
+
+//将数组A中的内容和数组B中的内容进行交换。（数组一样大）
+//#include<stdio.h>
+//int main()
+//{
+//	int arr1[5] = { 'a','b','c','e','f' };
+//	int arr2[5] = { 'g','h','i','j','k' };
+//	int i = 0;
+//
+//	for (i = 0; i < 5; i++)
+//	{
+//		printf("%c ", arr1[i]);
+//	}
+//	printf("\n");
+//
+//	for (i = 0; i < 5; i++)
+//	{
+//		printf("%c ", arr2[i]);
+//	}
+//	printf("\n");
+//
+//	for (i = 0; i < 5; i++)
+//	{
+//		int temp = arr1[i];
+//		arr1[i] = arr2[i];
+//		arr2[i] = temp;
+//	}
+//	for (i = 0; i < 5; i++)
+//	{
+//		printf("%c ", arr1[i]);
+//	}
+//	printf("\n");
+//
+//	for (i = 0; i < 5; i++)
+//	{
+//		printf("%c ", arr2[i]);
+//	}
+//	printf("\n");
+//	return 0;
+//}
+
+
+
+//创建一个整形数组，完成对数组的操作
+//实现函数init() 初始化数组为全0
+//实现print()  打印数组的每个元素
+//实现reverse()  函数完成数组元素的逆置。
+//要求：自己设计以上函数的参数，返回值。
+//#include<stdio.h>
+//void init(int arr[])
+//{
+//	int i = 0;
+//	for (i = 0; i < 5; i++)
+//	{
+//		arr[i] = 0;
+//	}
+//}
+//
+//void print(int arr[])
+//{
+//	int i = 0;
+//	for (i = 0; i < 5; i++)
+//	{
+//		printf("%d ", arr[i]);
+//	}
+//}
+//
+//void reverse(int sz,int arr[])
+//{
+//	int l = 0;
+//	int r = sz-1;
+//	while (l < r)
+//	{
+//		int temp = arr[l];
+//		arr[l] = arr[r];
+//		arr[r] = temp;
+//		l++;
+//		r--;
+//	}
+//}
+//int main()
+//{
+//	int arr[] = { 1,2,3,4,5 };
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	//init(arr);
+//	reverse(sz,arr);
+//	print(arr);
+//	return 0;
+//}
