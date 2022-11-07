@@ -9,6 +9,13 @@ void SeqListInit(SL* ps1)
 	ps1->capacity = 0;
 }
 
+//Ïú»Ù¿Õ¼ä
+void SegListDestory(SL* ps1)
+{
+	free(ps1->a);
+	ps1->a = NULL;
+	ps1->capacity = ps1->size = 0;
+}
 void SeqListCheckCapacity(SL* ps1)
 {
 	//´æÂú¾ÍÀ©Èİ

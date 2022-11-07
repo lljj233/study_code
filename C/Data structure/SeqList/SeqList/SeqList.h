@@ -37,6 +37,7 @@ typedef struct SeqList
 //增删查找等功能接口函数的声明
 void SeqListInit(SL* ps1);
 void SeqListPrint(SL* ps1);
+void SegListDestory(SL* ps1);
 
 void SeqListPushBack(SL* ps1, SQDateType x);
 void SeqListFrontBack(SL* ps1, SQDateType x);

@@ -21,6 +21,8 @@ void TestSeqList1()
 	SeqListPushBack(&s1, 11);
 
 	SeqListPrint(&s1);
+ 
+  SegListDestory(&s1);
 }
 
 void TestSeqList2()
@@ -46,6 +48,8 @@ void TestSeqList2()
 	SeqListPopFront(&s1);
 
 	SeqListPrint(&s1);
+ 
+  SegListDestory(&s1);
 }
 
 void TestSeqList3()
@@ -65,6 +69,8 @@ void TestSeqList3()
 	SeqListErase(&s1, 3);
 
 	SeqListPrint(&s1);
+
+	SegListDestory(&s1);
 }
 int main()
 {
