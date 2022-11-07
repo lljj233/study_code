@@ -68,6 +68,8 @@ void TestSeqList3()
 
 	SeqListErase(&s1, 3);
 
+	SeqListModity(&s1, 2, 20);
+
 	SeqListPrint(&s1);
 
 	SegListDestory(&s1);
@@ -81,7 +83,7 @@ int main()
 }
 
 
-//#include <stdio.h>
+//#include <stdio.h> 
 //
 //int main() {
 //

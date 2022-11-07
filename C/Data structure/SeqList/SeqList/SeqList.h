@@ -41,7 +41,10 @@ void SegListDestory(SL* ps1);
 
 void SeqListPushBack(SL* ps1, SQDateType x);
 void SeqListFrontBack(SL* ps1, SQDateType x);
-void SeqListPopBack(SL* ps1);
 void SeqListPopFront(SL* ps1);
+void SeqListPopBack(SL* ps1);
 void SeqListInsert(SL* ps1, int pos, SQDateType x);
 void SeqListErase(SL* ps1, int pos);
+
+int SeqListFind(SL* ps1, SQDateType x);
+void SeqListModity(SL* ps1, int pos, SQDateType x);

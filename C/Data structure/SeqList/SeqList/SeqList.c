@@ -8,7 +8,15 @@ void SeqListInit(SL* ps1)
 	ps1->size = 0;
 	ps1->capacity = 0;
 }
-
+//打印
+void SeqListPrint(SL* ps1)
+{
+	for (int i = 0; i < ps1->size; ++i)
+	{
+		printf("%d ", ps1->a[i]);
+	}
+	printf("\n");
+}
 //销毁空间
 void SegListDestory(SL* ps1)
 {
@@ -16,9 +24,9 @@ void SegListDestory(SL* ps1)
 	ps1->a = NULL;
 	ps1->capacity = ps1->size = 0;
 }
+//存满就扩容
 void SeqListCheckCapacity(SL* ps1)
 {
-	//存满就扩容
 	if (ps1->size == ps1->capacity)
 	{
 		int newcapacity = ps1->capacity == 0 ? 4 : ps1->capacity * 2;
@@ -35,7 +43,6 @@ void SeqListCheckCapacity(SL* ps1)
 		}
 	}
 }
-
 //头插
 void SeqListPushBack(SL* ps1, SQDateType x)
 {
@@ -74,15 +81,6 @@ void SeqListPopBack(SL* ps1)
 	assert(ps1->size > 0);
 	ps1->size--;
 }
-//打印
-void SeqListPrint(SL* ps1)
-{
-	for (int i = 0; i < ps1->size; ++i)
-	{
-		printf("%d ", ps1->a[i]);
-	}
-	printf("\n");
-}
 //指定插入
 void SeqListInsert(SL* ps1, int pos, SQDateType x)
 {
@@ -108,4 +106,22 @@ void SeqListErase(SL* ps1, int pos)
 		++start;
 	}
 	ps1->size--;
+}
+//查找
+int SeqListFind(SL* ps1, SQDateType x)
+{
+	for (int i = 0; i < ps1->size; i++)
+	{
+		if (ps1->a[i] == x)
+		{
+			return i;
+		}
+	}
+	return -1;
+}
+//改变
+void SeqListModity(SL* ps1, int pos, SQDateType x)
+{
+	assert(pos < ps1->size);
+	ps1->a[pos] = x;
 }
