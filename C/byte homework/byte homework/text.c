@@ -758,3 +758,40 @@
 //	//strlen求的是字符串长度，从首元素开始计算，遇见‘\0’停止，由于acY数组没有'\0‘，所以strlen(acY)的结果是个随机值
 //	return 0;
 //}
+
+
+//实现一个对整形数组的冒泡排序
+//#include<stdio.h>
+//void func(int arr[], int size)
+//{
+//	int i = 0;
+//	for (i = 0; i < size - 1; i++)
+//	{
+//		int j = 0;
+//		for (j = 0; j < size - 1 - i; j++)
+//		{
+//			if (arr[j] > arr[j + 1])
+//			{
+//				int temp = arr[j];
+//				arr[j] = arr[j + 1];
+//				arr[j + 1] = temp;
+//			}
+//		}
+//	}
+//}
+//int main()
+//{
+//	int arr[10] = { 0 };
+//	int i = 0;
+//	for (i = 0; i < 10; i++)
+//	{
+//		scanf("%d", &arr[i]);
+//	}
+//	int size = sizeof(arr) / sizeof(arr[0]);
+//	func(arr,size);
+//	for (i = 0; i < 10; i++)
+//	{
+//		printf("%d ", arr[i]);
+//	}
+//	return 0;
+//}
