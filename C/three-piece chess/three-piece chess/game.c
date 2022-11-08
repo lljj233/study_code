@@ -48,7 +48,7 @@ void Play_move(char board[ROW][COL], int row, int col)
 	printf("玩家下棋\n");
 	while (1)
 	{
-		printf("请输入下棋坐标");
+		printf("请输入下棋坐标\n");
 		int x = 0;
 		int y = 0;
 		scanf("%d %d", &x, &y);
@@ -61,12 +61,12 @@ void Play_move(char board[ROW][COL], int row, int col)
 			}
 			else
 			{
-				printf("该坐标已被占用，请重新输入");
+				printf("该坐标已被占用，请重新输入\n");
 			}
 		}
 		else
 		{
-			printf("输入错误");
+			printf("输入错误\n");
 		}
 	}
 }
@@ -130,7 +130,7 @@ char is_win(char board[ROW][COL], int row, int col)
 	}
 	if (board[0][2] == board[1][1] && board[1][1] == board[2][0] && board[1][1] != ' ')
 	{
-		return board[0][0];
+		return board[0][2];
 	}
 	//平局
 	if (is_full(board, row, col) == 1)
