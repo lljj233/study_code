@@ -186,3 +186,13 @@
 //}
 
 
+//sizeof操作符
+//int main()
+//{
+//	int a = 10;
+//	short s = 5;
+//	printf("%d\n", sizeof(short));
+//	printf("%d\n", sizeof(s = a + 3));//最终由s决定，也就是short
+//	printf("%d\n", s);//sizeof内部的表达式是不计算的
+//	return 0;
+//}
