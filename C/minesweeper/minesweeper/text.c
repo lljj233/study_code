@@ -21,6 +21,7 @@ void game()
 
 	//¥Ú”°∆Â≈Ã
 	PrintBoard(show, ROW, COL);
+	//PrintBoard(mine, ROW, COL);
 
 	//≤º÷√¿◊
 	SetMine(mine, ROW, COL);
