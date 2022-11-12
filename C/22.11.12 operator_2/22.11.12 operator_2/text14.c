@@ -152,3 +152,37 @@
 //	printf("%d %d\n", a, b);
 //	return 0;
 //}
+
+
+//取地址符和间接访问操作符（解引用操作符）
+//int main()
+//{
+//	int a = 10;
+//	printf("%p", &a);
+//	int* p1 = &a;
+//	
+//	char ch = 'w';
+//	char* p2 = &ch;
+//
+//	char arr[10] = { 0 };
+//	char* p3 = arr;
+//	char* p4 = &arr[0];
+//
+//	char* p5 = "abcdef";
+//	printf("%p\n", p5);
+//	printf("%c\n", *p5);
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	int a = 10;
+//	printf("%d\n", a);
+//	int* pa = &a;
+//	*pa = 20;//解引用操作
+//	printf("%d\n", a);
+//	return 0;
+//}
+
+
