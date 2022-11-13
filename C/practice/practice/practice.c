@@ -551,3 +551,53 @@
 //	printf("%d %d\n", a, b);
 //	return 0;
 //}
+
+
+//#include <stdio.h>
+//int func(int n)
+//{
+//    if (n == 1 || n == 0)
+//        return 1;
+//    else 
+//        return func(n - 2) + func(n - 1);
+//}
+//int main()
+//{
+//    int n = 0;
+//    scanf("%d", &n);
+//    int ret = func(n);
+//    printf("%d", ret);
+//    return 0;
+//}
+
+
+//#include <stdio.h>
+//int func(int y, int m)
+//{
+//    if ((y % 4 == 0 && y % 100 != 0) || ((y % 400) == 0))
+//    {
+//        if (m == 2)
+//            return 29;
+//        else if (m == 4 || m == 6 || m == 9 || m == 11)
+//            return 31;
+//        else
+//            return 30;
+//    }
+//    else
+//    {
+//        if (m == 2)
+//            return 28;
+//        else if (m == 4 || m == 6 || m == 9 || m == 11)
+//            return 31;
+//        else
+//            return 30;
+//    }
+//}
+//int main()
+//{
+//    int year = 0;
+//    int month = 0;
+//    scanf("%d %d", &year, &month);
+//    int ret = func(year, month);
+//    printf("%d", ret);
+//}
