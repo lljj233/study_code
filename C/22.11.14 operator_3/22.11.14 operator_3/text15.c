@@ -75,3 +75,26 @@
 //	printf("%d", x);
 //	return 0;
 //}
+
+
+//sizeof和数组
+//void test1(int arr[])//数组传参，形参可以写成指针
+//{
+//	printf("%zd\n", sizeof(arr));
+//}
+//void test2(char ch[])
+//{
+//	printf("%zd\n", sizeof(ch));
+//}
+//int main()
+//{
+//	int arr[10] = { 0 };
+//	char ch[10] = { 0 };
+//	printf("%zd\n", sizeof(arr));//40
+//	printf("%zd\n", sizeof(ch));//10
+//
+//	//x64下运行是8，x86下运行是4
+//	test1(arr);//4
+//	test2(ch);//4
+//	return 0;
+//}
