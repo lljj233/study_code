@@ -57,3 +57,21 @@
 //	int b = a + 1;//a=10 b=11
 //	return 0;
 //}
+
+
+//强制类型转换
+//int main()
+//{
+//	int a = (int)3.14;//保留整数
+//	printf("%d", a);
+//	return 0;
+//}
+
+//#include<time.h>
+//int main()
+//{
+//	srand((unsigned int)time(NULL));
+//	int x = rand();
+//	printf("%d", x);
+//	return 0;
+//}
