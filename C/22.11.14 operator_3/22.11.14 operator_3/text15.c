@@ -235,3 +235,16 @@
 //	printf("%u\n", sizeof(-c));  //4
 //	return 0;
 //}
+
+
+
+//算术转换(由下至上)
+//如果某个操作数的类型在上面这个列表中排名较低
+//那么首先要转换为另外一个操作数的类型后执行运算
+//long double
+//double
+//float
+//unsigned long int
+//long int
+//unsigned int
+//int
