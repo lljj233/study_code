@@ -158,3 +158,25 @@
 //}
 
 //if (a = b + 1, c = 1 / 2, d > 0)
+
+
+//访问一个结构体的成员
+//内置类型->自定义类型->结构体，枚举，联合体
+//typedef struct students
+//{
+//	char name[20];
+//	int num;
+//	int age;
+//}STU;
+//void print(STU* p)
+//{
+//	printf("%s %d %d\n", (*p).name, (*p).num, (*p).age);
+//	printf("%s %d %d\n", p->name, p->num, p->age);
+//}
+//int main()
+//{
+//	STU p1 = { "张三",11,18 };
+//	printf("%s %d %d\n", p1.name, p1.num, p1.age);
+//	print(&p1);
+//	return 0;
+//}
