@@ -696,3 +696,29 @@
 //	printf("a = %d b = %d c = %d\n:", a, b, c);
 //	return 0;
 //}
+
+
+//#include<stdio.h>
+//int main()
+//{
+//	int a = 0, b = 0;
+//	while (scanf("%d %d", &a, &b) != EOF)
+//	{
+//		int i = 0;
+//		for (i = 31; i >= 0; i--)
+//		{
+//			printf("%d ", (a >> i) & 1);
+//		}
+//		printf("\n");
+//		for (i = 31; i >= 0; i--)
+//		{
+//			printf("%d ", (b >> i) & 1);
+//		}
+//		printf("\n");
+//		a = a ^ b;
+//		b = a ^ b;
+//		a = a ^ b;
+//		printf("%d %d\n", a, b);
+//	}
+//	return 0;
+//}
