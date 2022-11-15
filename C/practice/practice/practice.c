@@ -748,3 +748,14 @@
 //	}
 //	return 0;
 //}
+
+
+//#include <stdio.h>
+//int main()
+//{
+//    int i = 1;
+//    int ret = (++i) + (++i) + (++i);
+//    //          2       3       4     ->   4+4+4 
+//    printf("ret = %d\n", ret);
+//    return 0;
+//}
