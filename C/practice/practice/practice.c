@@ -778,3 +778,123 @@
 //    }
 //    return 0;
 //}
+
+
+//#include<stdio.h>
+//int main()
+//{
+//	int n, m;
+//	scanf("%d %d", &n, &m);
+//	int num = 0;
+//	int sum = 0;
+//	int i = 0;
+//	int j = 0;
+//	for (i = 0; i < n; i++)
+//	{
+//		for (j = 0; j < m; j++)
+//		{
+//			scanf("%d", &num);
+//			if (num > 0)
+//				sum += num;
+//		}
+//	}
+//	printf("%d\n", sum);
+//	return 0;
+//}
+
+
+//#include<stdio.h>
+//#define N 100
+//int main()
+//{
+//	int num = 0;
+//	scanf("%d", &num);
+//	int arr[N] = { 0 };
+//	int i = 0;
+//	while (num)
+//	{
+//		arr[i] = num % 6;
+//		num /= 6;
+//		i++;
+//	}
+//	for (i--; i >= 0; i--)
+//	{
+//		printf("%d", arr[i]);
+//	}
+//	return 0;
+//}
+
+
+//#include<stdio.h>
+//int func(int num)
+//{
+//	if (num)
+//	{
+//		func(num/6);
+//		printf("%d", num % 6);
+//	}
+//} 
+//		
+//int main()
+//{
+//	int num = 0;
+//	scanf("%d", &num);
+//	func(num);
+//	return 0;
+//}
+
+//#include<stdio.h>
+//int main()
+//{
+//	int n, m;
+//	scanf("%d %d", &n, &m);
+//	int i = 0, j = 0;
+//	int arr[10][10] = { 0 };
+//	for (i = 0; i < n; i++)
+//	{
+//		for (j = 0; j < m; j++)
+//		{
+//			scanf("%d", &arr[i][j]);
+//		}
+//	}
+//	for (i = 0; i < m; i++)
+//	{
+//		for (j = 0; j < n; j++)
+//		{
+//			printf("%d ", arr[j][i]);
+//		}
+//		printf("\n");
+//	}
+//	return 0;
+//}
+
+
+//#include<stdio.h>
+//int main()
+//{
+//	int arr1[10] = { 0 };
+//	int arr2[10] = { 0 };
+//	int i = 0;
+//	int n = 0;
+//	scanf("%d", &n);
+//	for (i = 0; i < n; i++)
+//	{
+//		scanf("%d", &arr1[i]);
+//	}
+//	int num = 0;
+//	scanf("%d", &num);
+//	int j = 0;
+//	for (i = 0; i < n; i++)
+//	{
+//		if (num != arr1[i])
+//		{
+//			arr2[j] = arr1[i];
+//			j++;
+//		}
+//	}
+//	for (i = 0; i < j; i++)
+//	{
+//		printf("%d ", arr2[i]);
+//	}
+//	return 0;
+//}
