@@ -914,3 +914,71 @@
 //	printf("%d", ret);
 //	return 0;
 //}
+
+
+//输入一个正整数n,输出一行为正整数n表示为六进制的结果
+//#include<stdio.h>
+//非递归
+//int main()
+//{
+//	int n = 0;
+//	scanf("%d", &n);
+//	int arr[20] = { 0 };
+//	int i = 0;
+//	while(n)
+//	{
+//		arr[i++] = n % 6;
+//		n /= 6;
+//	}
+//	for (--i; i >= 0; i--)
+//	{
+//		printf("%d", arr[i]);
+//	}
+//	return 0;
+//}
+//递归
+//void func(int n)
+//{
+//	if (n > 5)
+//	{
+//		func(n / 6);
+//	}
+//  printf("%d", n % 6);
+//}
+//int main()
+//{
+//	int n = 0;
+//	scanf("%d", &n);
+//	func(n);
+//	return 0;
+//}
+
+
+//删除序列中的指定数字
+//#include<stdio.h>
+//int main()
+//{
+//	int n = 0;
+//	scanf("%d", &n);
+//	int arr[20] = { 0 };
+//	int i = 0;
+//	for (i = 0; i < n; i++)
+//	{
+//		scanf("%d", &arr[i]);
+//	}
+//	int del = 0;
+//	scanf("%d", &del);
+//	int j = 0;
+//	for (i = 0; i < n; i++)
+//	{
+//		if (arr[i] != del)
+//		{
+//			arr[j++] = arr[i];
+//		}
+//	}
+//	for (i = 0; i < j; i++)
+//	{
+//		printf("%d ", arr[i]);
+//	}
+//	return 0;
+//}
