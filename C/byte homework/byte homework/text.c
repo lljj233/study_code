@@ -816,6 +816,22 @@
 //}
 
 
+//int main()
+//{
+//	int n = 0;
+//	scanf("%d", &n);
+//	int count = 0;
+//	int i = 0;
+//	while (n)
+//	{
+//		n = n & (n - 1);
+//		count++;
+//	}
+//	printf("%d", count);
+//	return 0;
+//}
+
+
 //获取一个整数二进制序列中所有的偶数位和奇数位，分别打印出二进制序列
 //#include<stdio.h>
 //int main()
@@ -857,10 +873,44 @@
 //	int a = 0, b = 0;
 //	scanf("%d %d", &a, &b);
 //	int count = 0;
+//	int c = a ^ b;
+//	while (c)
+//	{
+//		c = c & (c - 1);
+//		count++;
+//	}
+//	printf("%d", count);
+//	return 0;
+//}
+
+//int main()
+//{
+//	int a = 0, b = 0;
+//	scanf("%d %d", &a, &b);
+//	int count = 0;
 //	int i = 0;
 //	for (i = 0; i < 32; i++)
 //		if (((a >> i) & 1) != ((b >> i) & 1))
 //			count++;
 //	printf("%d", count);
+//	return 0;
+//}
+
+
+//走台阶问题。每次可以选择走一阶或二阶，求有几种走法
+//#include<stdio.h>
+//int Fib(int n)
+//{
+//	if (n <= 2)
+//		return n;
+//	else
+//		return Fib(n - 2) + Fib(n - 1);
+//}
+//int main()
+//{
+//	int n = 0;
+//	scanf("%d", &n);
+//	int ret = Fib(n);
+//	printf("%d", ret);
 //	return 0;
 //}
