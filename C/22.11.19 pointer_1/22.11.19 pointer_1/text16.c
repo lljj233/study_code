@@ -174,3 +174,27 @@
 //	}
 //	return 0;
 //}
+
+
+//指针和数组
+//int main()
+//{
+//	int arr[10] = { 0 };
+//	int* p = arr;
+//	int i = 0;
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	//赋值
+//	for (i = 0; i < sz; i++)
+//	{
+//		/**p = i + 1;
+//		p++;*/
+//		*p++ = i + 1;
+//	}
+//	p = arr;
+//	//打印
+//	for (i = 0; i < sz; i++)
+//	{
+//		printf("%d ", *p++);
+//	}
+//	return 0;
+//}
