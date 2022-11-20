@@ -898,3 +898,36 @@
 //	}
 //	return 0;
 //}
+#include <stdio.h>
+int main()
+{
+    int arr[7] = { 0 };
+    int i = 0;
+    for (i = 0; i < 7; i++)
+    {
+        scanf("%d", &arr[i]);
+    }
+    int max = 0;
+    int min = 100;
+    for (i = 0; i < 7; i++)
+    {
+        if (max < arr[i])
+        {
+            max = arr[i];
+        }
+        if (min > arr[i])
+        {
+            min = arr[i];
+        }
+    }
+    int sum = 0;
+    for (i = 0; i < 7; i++)
+    {
+        sum += arr[i];
+    }
+    printf("%d\n", sum);
+    printf("%d\n", max);
+    printf("%d\n", min);
+    float ret = (sum - max - min) / 5.0;
+    printf("%.2f\n", ret);
+}
