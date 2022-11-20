@@ -982,3 +982,88 @@
 //	}
 //	return 0;
 //}
+
+
+//写一个函数打印arr数组的内容，不使用数组下标，使用指针。
+//#include<stdio.h>
+//void print(int* p,int sz)
+//{
+//	int i = 0;
+//	for (i = 0; i < sz; i++)
+//	{
+//		printf("%d ", *(p++));
+//	}
+//}
+//int main()
+//{
+//	int arr[5] = { 1,2,3,4,5 };
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	print(arr, sz);
+//	return 0;
+//}
+
+
+
+//写一个函数，可以逆序一个字符串的内容。
+//#include<stdio.h>
+//void func(char* p)
+//{
+//	char* start = p;
+//	while (*p != '\0')
+//		p++;
+//	int sz = p - start;
+//	p -= 1;
+//	while (start <= p)
+//	{
+//		int tem = *start;
+//		*start = *p;
+//		*p = tem;
+//		start++;
+//		p--;
+//	}
+//}
+//int main()
+//{
+//	char ch[20] = { 0 };
+//	int i = 0;
+//	while((ch[i++]=getchar())!='\n');
+//	func(ch);
+//	printf("%s", ch);
+//	return 0;
+//}
+
+
+
+//打印菱形
+//#include <stdio.h>
+//int main()
+//{
+//	int i = 0;
+//	int j = 0;
+//	for (i = 1; i <= 7; ++i)
+//	{
+//		for (j = 1; j <=14 - 2 * i; ++j)
+//		{
+//			printf(" ");
+//		}
+//		for (j = 1; j <= 2 * i - 1; ++j)
+//		{
+//			printf("* ");
+//		}
+//		printf("\n");
+//	}
+//	for (i = 1; i <= 6; ++i)
+//	{
+//		for (j = 1; j <= 2 * i; ++j)
+//		{
+//			printf(" ");
+//		}
+//		for (j = 1; j <= 13 - 2 * i; ++j)
+//		{
+//			printf("* ");
+//		}
+//		printf("\n");
+//	}
+//	return 0;
+//}
+
