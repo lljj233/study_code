@@ -1067,3 +1067,49 @@
 //	return 0;
 //}
 
+
+//求出0～100000之间的所有“水仙花数”并输出。
+//#include<stdio.h>
+//#include<math.h>
+//int main()
+//{
+//	int i = 0;
+//	for (i = 0; i < 100000; i++)
+//	{
+//		int count = 1;
+//		int some = i;
+//		while (some / 10)
+//		{
+//			count++;
+//			some = some / 10;
+//		}
+//		some = i;
+//		int sum = 0;
+//		while (some)
+//		{
+//			sum = sum + pow(some % 10,count);
+//			some = some / 10;
+//		}
+//		if (sum == i)
+//			printf("%d ", i);
+//	}
+//	return 0;
+//}
+
+
+//求Sn = a + aa + aaa + aaaa + aaaaa的前5项之和，其中a是一个数字
+//#include<stdio.h>
+//int main()
+//{
+//	int num = 0;
+//	scanf("%d", &num);
+//	int sum = 0;
+//	int i = 0;
+//	for (i = 0; i < 5; i++)
+//	{
+//		sum += num;
+//		num = num * 10 + num % 10;
+//	}
+//	printf("%d", sum);
+//	return 0;
+//}
