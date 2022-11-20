@@ -118,3 +118,59 @@
 //3.指针指向空间释放，及时置NULL
 //4.避免返回局部变量的地址
 //5.指针使用之前检查有效性
+
+
+
+//指针的运算
+//1.指针加减整数
+//#define N_VALUES 5
+//int main()
+//{
+//	float values[N_VALUES];
+//	float* vp;
+//	for(vp = &values[0]; vp < &values[N_VALUES];)
+//	{
+//		*vp++ = 0;
+//	}
+//	return 0;
+//}
+
+//2.指针减去指针（前提是两个指针要指向同一块空间）
+//指针减指针，得到但是两个指针之间元素的个数的绝对值
+//int main()
+//{
+//	int arr[10] = { 0 };
+//	printf("%d\n", &arr[9] - &arr[0]);
+//	printf("%d\n", &arr[0] - &arr[9]);
+//	return 0;
+//}
+
+//int get_strlen(char* str)
+//{
+//	char* start = str;
+//	while (*str != '\0')
+//	{
+//		str++;
+//	}
+//	return str - start;
+//}
+//int main()
+//{
+//	char arr[] = "abcde";
+//	int len = get_strlen(arr);
+//	printf("%d", len);
+//	return 0;
+//}
+
+//3.指针的关系运算
+//#define N_VALUES 5
+//int main()
+//{
+//	float values[N_VALUES];
+//	float* vp;
+//	for(vp = &values[N_VALUES]; vp > &values[N_VALUES];)
+//	{
+//		*--vp = 0;
+//	}
+//	return 0;
+//}
