@@ -21,3 +21,41 @@
 //
 //	return 0;
 //}
+
+
+
+//结构体传参
+//struct S
+//{
+//	int a;
+//	char c;
+//};
+//struct P
+//{
+//	double d;
+//	struct S s;
+//	float f;
+//};
+//void Print1(struct P sp)
+//{
+//	//结构体变量.成员
+//	printf("%lf %d %c %f\n", sp.d, sp.s.a, sp.s.c, sp.f);
+//}
+//void Print2(struct P* p1)
+//{
+//	//结构体指针->成员
+//	printf("%lf %d %c %f\n", p1->d,p1->s.a,p1->s.c,p1->f);
+//}
+//int main()
+//{
+//	struct P p = { 5.5,{100,'f'},3.14f };
+//	//printf("%lf %d %c %f\n", p.d, p.s.a, p.s.c, p.f);
+//
+//	Print1(p);  //传值调用
+//	Print2(&p); //传址调用
+//一般选Print2函数。
+//原因：
+//函数传参的时候，参数是需要压栈的。
+//如果传递一个结构体对象的时候，结构体过大，参数压栈的的系统开销比较大，所以会导致性能的下降。
+//	return 0;
+//}
