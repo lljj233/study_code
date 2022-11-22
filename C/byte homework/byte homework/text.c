@@ -1032,6 +1032,55 @@
 //	return 0;
 //}
 
+//#include<stdio.h>
+//#include<string.h>
+//void reverse(char* str)
+//{
+//	int left = 0;
+//	int right = strlen(str) - 1;
+//	while (left < right)
+//	{
+//		char tmp = *(str + left);
+//		*(str + left) = *(str + right);
+//		*(str + right) = tmp;
+//		left++;
+//		right--;
+//	}
+//}
+//int main()
+//{
+//	char arr[20] = { 0 };
+//	gets(arr);
+//	reverse(arr);
+//	printf("%s", arr);
+//	return 0;
+//}
+
+//#include<stdio.h>
+//#include<string.h>
+//void reverse(char* str)
+//{
+//	char* left = str;
+//	char* right = str + strlen(str)-1;
+//	while (left < right)
+//	{
+//		char tmp = *left;
+//		*left = *right;
+//		*right = tmp;
+//		left++;
+//		right--;
+//	}
+//}
+//int main()
+//{
+//	char arr[20] = { 0 };
+//	gets(arr);
+//	reverse(arr);
+//	printf("%s", arr);
+//	return 0;
+//}
+
+
 
 
 //´òÓ¡ÁâÐÎ
