@@ -1162,3 +1162,26 @@
 //	printf("%d", sum);
 //	return 0;
 //}
+
+
+
+//喝汽水，1瓶汽水1元，2个空瓶可以换一瓶汽水，给20元，可以多少汽水
+//#include<stdio.h>
+//void get_water(int money)
+//{
+//	int bottle = 0;
+//	int some = money;
+//	while (some)
+//	{
+//		some /= 2;
+//		bottle += some;
+//	}
+//	printf("%d", bottle + money);
+//}
+//int main()
+//{
+//	int money = 0;
+//	scanf("%d", &money);
+//	get_water(money);
+//	return 0;
+//}
