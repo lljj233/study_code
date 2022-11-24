@@ -1386,3 +1386,40 @@
 //	}
 //	return 0;
 //}
+
+
+
+//判断一个整数数列是否是有序序列
+//#include<stdio.h>
+//int main()
+//{
+//	int n = 0;
+//	scanf("%d", &n);
+//	int arr[50] = { 0 };
+//	int i = 0;
+//	for (i = 0; i < n; i++)
+//	{
+//		scanf("%d", &arr[i]);
+//	}
+//	int count = 0;
+//	for (i = 0; i < n; i++)
+//	{
+//		if (arr[0] <= arr[1])
+//		{
+//			count++;
+//			if (arr[i] > arr[i + 1])
+//				break;
+//		}
+//		else
+//		{
+//			count++;
+//			if (arr[i] < arr[i + 1])
+//				break;
+//		}
+//	}
+//	if (count == n)
+//		printf("sorted");
+//	else
+//		printf("unsorted");
+//	return 0;
+//}
