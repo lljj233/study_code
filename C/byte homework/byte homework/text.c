@@ -1306,43 +1306,83 @@
 
 
 //输入两个升序排列的序列，将两个序列合并为一个有序序列并输出。
-#include<stdio.h>
-int main()
-{
-    int n = 0;
-    int m = 0;
-    scanf("%d %d", &n, &m);
-    int arr1[1000] = { 0 };
-    int arr2[1000] = { 0 };
-    int i = 0;
-    int j = 0;
-    for (i = 0; i < n; i++)
-    {
-        scanf("%d", &arr1[i]);
-    }
-    for (i = 0; i < m; i++)
-    {
-        scanf("%d", &arr2[i]);
-    }
-    i = 0; j = 0;
-    while (i < n && j < m)
-    {
-        if (arr1[i] < arr2[j])
-        {
-            printf("%d ", arr1[i]);
-            i++;
-        }
-        else
-        {
-            printf("%d ", arr2[j]);
-            j++;
-        }
-    }
-    if (i == n && j < m)
-        for (; j < m; j++)
-            printf("%d ", arr2[j]);
-    else
-        for (; i < n; i++)
-            printf("%d ", arr1[i]);
-    return 0;
-}
+//#include<stdio.h>
+//int main()
+//{
+//    int n = 0;
+//    int m = 0;
+//    scanf("%d %d", &n, &m);
+//    int arr1[1000] = { 0 };
+//    int arr2[1000] = { 0 };
+//    int i = 0;
+//    int j = 0;
+//    for (i = 0; i < n; i++)
+//    {
+//        scanf("%d", &arr1[i]);
+//    }
+//    for (i = 0; i < m; i++)
+//    {
+//        scanf("%d", &arr2[i]);
+//    }
+//    i = 0; j = 0;
+//    while (i < n && j < m)
+//    {
+//        if (arr1[i] < arr2[j])
+//        {
+//            printf("%d ", arr1[i]);
+//            i++;
+//        }
+//        else
+//        {
+//            printf("%d ", arr2[j]);
+//            j++;
+//        }
+//    }
+//    if (i == n && j < m)
+//        for (; j < m; j++)
+//            printf("%d ", arr2[j]);
+//    else
+//        for (; i < n; i++)
+//            printf("%d ", arr1[i]);
+//    return 0;
+//}
+
+
+
+//调整数组使奇数全部都位于偶数前面。
+//#include<stdio.h>
+//void move(int arr[], int n)
+//{
+//	int* left = arr;
+//	int* right = arr + n - 1;
+//	while (left < right)
+//	{
+//		if ((*left) % 2 != 0)
+//			left++;
+//		else if ((*right) % 2 == 0)
+//			right--;
+//		else
+//		{
+//			int tem = *left;
+//			*left = *right;
+//			*right = tem;
+//		}
+//	}
+//}
+//int main()
+//{
+//	int arr[20] = { 0 };
+//	int n = 0;
+//	scanf("%d", &n);
+//	int i = 0;
+//	for (i = 0; i < n; i++)
+//	{
+//		scanf("%d", &arr[i]);
+//	}
+//	move(arr, n);
+//	for (i = 0; i < n; i++)
+//	{
+//		printf("%d ", arr[i]);
+//	}
+//	return 0;
+//}
