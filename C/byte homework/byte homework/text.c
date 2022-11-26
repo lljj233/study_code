@@ -1518,3 +1518,26 @@
 //	printf("%s\n", my_strcpy(arr1, p));
 //	return 0;
 //}
+
+
+
+//模拟实现库函数strlen
+//strlen返回的是size_t,无符号的整型
+//#include<stdio.h>
+//#include<assert.h>
+//unsigned int my_strlen(const char* p)
+//{
+//	assert(p!=NULL);
+//	unsigned int len = 0;
+//	while (*p++!='\0')
+//	{
+//		len++;
+//	}
+//	return len;
+//}
+//int main()
+//{
+//	char arr[] = "hello";
+//	printf("%d", my_strlen(arr));
+//	return 0;
+//}
