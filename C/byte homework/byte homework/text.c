@@ -1423,3 +1423,80 @@
 //		printf("unsorted");
 //	return 0;
 //}
+
+
+
+//模拟实现库函数strcpy(拷贝字符串)
+//#include<stdio.h>
+//#include<string.h>
+//#include<assert.h>
+////void my_strcpy1(char* dest, char* src)
+////{
+////	while (*src != '\0')
+////	{
+////		*dest = *src;
+////		src++;
+////		dest++;
+////	}
+////	*dest = *src;
+////}
+////
+//////对my_strcpy1进行优化
+////void my_strcpy2(char* dest, char* src)
+////{
+////	while (*dest++ = *src++)//'\0'的ASCII值为0，退出循环
+////	{
+////		;
+////	}
+////	*dest = *src;
+////}
+////
+//////对my_strcpy2进行优化
+////void my_strcpy3(char* dest, char* src)
+////{
+////	/*if (dest == NULL || src == NULL)
+////	{
+////		return;
+////	}*/
+////
+////	/*assert(src != NULL);
+////	assert(dest!= NULL);*/
+////	assert(src && dest);
+////	//断言指针的有效性
+////	//assert后可以放一个表达式，表达式如果为假则报错，否则无事发生
+////
+////	while (*dest++ = *src++)
+////	{
+////		;
+////	}
+////	*dest = *src;
+////}
+//
+////对my_strcpy3进行优化
+//void my_strcpy4(char* dest, const char* src)
+//{
+//	assert(src && dest);
+//	while (*dest++ = *src++)
+//	{
+//		;
+//	}
+//	*dest = *src;
+//}
+//
+//int main()
+//{
+//	/*char arr1[20] = "xxxxxxxxxxx";
+//	char arr2[] = "hello";
+//
+//	char arr3[10] = { 0 };
+//	char* p1 = NULL;*/
+//
+//	char arr4[20] = { 0 };
+//	char* p2 = "hello";
+//
+//	/*my_strcpy2(arr1, arr2);
+//	my_strcpy3(arr3, p1);*/
+//	my_strcpy4(p2, arr4);
+//
+//	return 0;
+//}
