@@ -1448,7 +1448,6 @@
 ////	{
 ////		;
 ////	}
-////	*dest = *src;
 ////}
 ////
 //////对my_strcpy2进行优化
@@ -1469,7 +1468,6 @@
 ////	{
 ////		;
 ////	}
-////	*dest = *src;
 ////}
 //
 ////对my_strcpy3进行优化
@@ -1480,7 +1478,6 @@
 //	{
 //		;
 //	}
-//	*dest = *src;
 //}
 //
 //int main()
@@ -1498,5 +1495,26 @@
 //	my_strcpy3(arr3, p1);*/
 //	my_strcpy4(p2, arr4);
 //
+//	return 0;
+//}
+
+//#include<stdio.h>
+//#include<assert.h>
+//char* my_strcpy(char* dest, const char* src)
+//{
+//	assert(src && dest);
+//	char* ret = dest;
+//	while (*dest++ = *src++)
+//	{
+//		;
+//	}
+//	return ret;
+//}
+//
+//int main()
+//{
+//	char arr1[20] = { 0 };
+//	char* p = "hello";
+//	printf("%s\n", my_strcpy(arr1, p));
 //	return 0;
 //}
