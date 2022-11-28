@@ -946,3 +946,41 @@
 //	}
 //	return 0;
 //}
+
+//#include<stdio.h>
+//typedef struct student
+//{
+//	int num;
+//	char name[20];
+//	char sex[20];
+//	float score;
+//}STU;
+//void print1(STU s)
+//{
+//	printf("%d %s %s %.1f\n", s.num, s.name, s.sex, s.score);
+//}
+//void print2(STU* ps)
+//{
+//	printf("%d %s %s %.1f\n", ps->num, ps->name, ps->sex, ps->score);
+//	printf("%d %s %s %.1f\n", (*ps).num, (*ps).name, (*ps).sex, (*ps).score);
+//}
+//int main()
+//{
+//	STU s1 = { 11,"撒撒","男",94.5f };
+//	STU s2;
+//
+//	printf("请输入学号：");
+//	scanf("%d", &s2.num);
+//	printf("请输入姓名：");
+//	scanf("%s", &s2.name);
+//	printf("请输入性别：");
+//	scanf("%s", &s2.sex);
+//	printf("请输入分数：");
+//	scanf("%f", &s2.score);
+//
+//	print1(s2);
+//
+//	/*print1(s1);
+//	print2(&s1);*/
+//	return 0;
+//}
