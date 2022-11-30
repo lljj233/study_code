@@ -1627,3 +1627,45 @@
 //	printf("%d", my_strlen(arr));
 //	return 0;
 //}
+
+
+
+//实现将一句话的单词进行逆序
+//#include <stdio.h>
+//#include <string.h>
+//void reverse(char* left, char* right)
+//{
+//	while (left < right)
+//	{
+//		char tmp = *left;
+//		*left = *right;
+//		*right = tmp;
+//		left++;
+//		right--;
+//	}
+//}
+//int main()
+//{
+//	char arr[100] = { 0 };
+//	gets(arr);
+//	char* cur = arr;
+//	while (*cur)
+//	{
+//		char* start = cur;
+//		char* end = cur;
+//		while (*end != ' ' && *end != '\0')
+//		{
+//
+//			end++;
+//		}
+//		reverse(start, end - 1);
+//		if (*end != '\0')
+//			cur = end + 1;
+//		else
+//			cur = end;
+//	}
+//	int len = strlen(arr);
+//	reverse(arr, arr + len - 1);
+//	printf("%s\n", arr);
+//	return 0;
+//}
