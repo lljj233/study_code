@@ -1347,6 +1347,57 @@
 //    return 0;
 //}
 
+//#include<stdio.h>
+//int main()
+//{
+//    int n = 0;
+//    int m = 0;
+//    scanf("%d %d", &n, &m);
+//    int arr1[1000] = { 0 };
+//    int arr2[1000] = { 0 };
+//    int i = 0;
+//    int j = 0;
+//    for (i = 0; i < n; i++)
+//    {
+//        scanf("%d", &arr1[i]);
+//    }
+//    for (i = 0; i < m; i++)
+//    {
+//        scanf("%d", &arr2[i]);
+//    }
+//    i = 0; j = 0;
+//    while (i < n && j < m)
+//    {
+//        if (arr1[i] < arr2[j])
+//        {
+//            printf("%d ", arr1[i]);
+//            i++;
+//        }
+//        else
+//        {
+//            printf("%d ", arr2[j]);
+//            j++;
+//        }
+//    }
+//    if (i == n)
+//    {
+//        while (j < m)
+//        {
+//            printf("%d ", arr2[j]);
+//            j++;
+//        }
+//    }
+//    else
+//    {
+//        while (i < n)
+//        {
+//            printf("%d ", arr1[i]);
+//            i++;
+//        }
+//    }
+//    return 0;
+//}
+
 
 
 //调整数组使奇数全部都位于偶数前面。
