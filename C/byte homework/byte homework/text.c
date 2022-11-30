@@ -1475,6 +1475,41 @@
 //	return 0;
 //}
 
+//#include<stdio.h>
+//int main()
+//{
+//	int n = 0;
+//	scanf("%d", &n);
+//	int arr[50] = { 0 };
+//	int i = 0;
+//	for (i = 0; i < n; i++)
+//	{
+//		scanf("%d", &arr[i]);
+//	}
+//	int flag1 = 0;//标记升序
+//	int flag2 = 0;//标记降序
+//	for (i = 0; i < n; i++)
+//	{
+//		if (arr[i - 1] < arr[i])
+//		{
+//			flag1 = 1;
+//		}
+//		else
+//		{
+//			flag2 = 1;
+//		}
+//	}
+//	if (flag1 + flag2 == 2)
+//	{
+//		printf("unsorted\n");
+//	}
+//	else
+//	{
+//		printf("sorted\n");
+//	}
+//	return 0;
+//}
+
 
 
 //模拟实现库函数strcpy(拷贝字符串)
