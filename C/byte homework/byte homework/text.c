@@ -1669,3 +1669,24 @@
 //	printf("%s\n", arr);
 //	return 0;
 //}
+
+
+
+//求两个数的最小公倍数
+//#include<stdio.h>
+//int main()
+//{
+//	int a, b;
+//	scanf("%d %d", &a, &b);
+//	int i = 1;
+//	while (1)
+//	{
+//		if ((a * i) % b == 0)
+//		{
+//			break;
+//		}
+//		i++;
+//	}
+//	printf("%d", a * i);
+//	return 0;
+//}
