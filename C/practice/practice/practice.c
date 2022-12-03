@@ -984,3 +984,27 @@
 //	print2(&s1);*/
 //	return 0;
 //}
+
+
+
+//#include <stdio.h>
+//int main()
+//{
+//    int i = 10000;
+//    for (i = 10000; i < 99999; i++)
+//    {
+//        int some = i;
+//        int sum = 0;
+//        int w = 10;
+//        while (w <= 10000)
+//        {
+//            sum += (some / w) * (some % w);
+//            w *= 10;
+//        }
+//        if (sum == i)
+//        {
+//            printf("%d ", i);
+//        }
+//    }
+//    return 0;
+//}
