@@ -1040,3 +1040,26 @@
 //    }
 //    return 0;
 //}
+
+
+
+//#include <stdio.h>
+//int main()
+//{
+//    char ch = 0;
+//    while ((scanf("%c", &ch) != EOF))
+//    {
+//        if (ch == '\n')
+//        {
+//            continue;
+//        }
+//        if (ch == 'A' || ch == 'a' || ch == 'E' || ch == 'e' || ch == 'I' || ch == 'i' || ch == 'O' || ch == 'o' || ch == 'U' || ch == 'u')
+//        {
+//            printf("Vowel\n");
+//        }
+//        else
+//        {
+//            printf("Consonant\n");
+//        }
+//    }
+//}
