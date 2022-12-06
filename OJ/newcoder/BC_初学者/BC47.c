@@ -1,5 +1,6 @@
 //https://www.nowcoder.com/practice/91a588dd4cd244bfa616f17603ec123c?tpId=107&tags=&title=&difficulty=0&judgeStatus=0&rp=1&sourceUrl=
 
+
 #include <stdio.h>
 
 int main()
