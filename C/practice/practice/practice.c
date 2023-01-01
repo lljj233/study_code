@@ -1101,19 +1101,37 @@
 
 
 
+//#include<stdio.h>
+//int x = 5, y = 7;
+//void swap()
+//{
+//	int z;
+//	z = x;
+//	x = y;
+//	y = z;
+//}
+//int main()
+//{
+//	int x = 3, y = 8;
+//	swap();
+//	printf("%d,%d\n", x, y);
+//	return 0;
+//}
+
+
+
 #include<stdio.h>
-int x = 5, y = 7;
-void swap()
+int f(int n)
 {
-	int z;
-	z = x;
-	x = y;
-	y = z;
+	static int i = 1;
+	if (n >= 5)
+		return n;
+	n = n + i;
+	i++;
+	return f(n);
 }
 int main()
 {
-	int x = 3, y = 8;
-	swap();
-	printf("%d,%d\n", x, y);
+	printf("%d", f(1));
 	return 0;
 }
