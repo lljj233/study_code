@@ -1120,18 +1120,46 @@
 
 
 
-#include<stdio.h>
-int f(int n)
-{
-	static int i = 1;
-	if (n >= 5)
-		return n;
-	n = n + i;
-	i++;
-	return f(n);
-}
-int main()
-{
-	printf("%d", f(1));
-	return 0;
-}
+//#include<stdio.h>
+//int f(int n)
+//{
+//	static int i = 1;
+//	if (n >= 5)
+//		return n;
+//	n = n + i;
+//	i++;
+//	return f(n);
+//}
+//int main()
+//{
+//	printf("%d", f(1));
+//	return 0;
+//}
+
+
+
+//#include<stdio.h>
+//int main()
+//{
+//	int n = 0;
+//	scanf("%d", &n);
+//	int i = 0;
+//	int num = 0;
+//	double sum = 0;
+//	int count1 = 0;
+//	int count2 = 0;
+//	for (i = 0; i < n; i++)
+//	{
+//		scanf("%d", &num);
+//		if (num < 0)
+//			count1++;
+//		else if(num > 0)
+//		{
+//			sum += num;
+//			count2++;
+//		}
+//	}
+//	double ave = sum / count2;
+//	printf("%d %.1lf", count1, ave);
+//	return 0;
+//}
