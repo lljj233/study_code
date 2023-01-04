@@ -1782,16 +1782,46 @@
 //D说：C在胡说
 //已知3个人说了真话，1个人说的是假话。
 //现在请根据这些信息，写一个程序来确定到底谁是凶手。
-#include<stdio.h>
-int main()
-{
-	char killer = '0';
-	for (killer = 'A'; killer < 'D'; killer++)
-	{
-		if ((killer != 'A') + (killer == 'C') + (killer == 'D') + (killer != 'D') == 3)
-		{
-			printf("凶手是%c\n", killer);
-		}
-	}
-	return 0;
-}
+//#include<stdio.h>
+//int main()
+//{
+//	char killer = '0';
+//	for (killer = 'A'; killer < 'D'; killer++)
+//	{
+//		if ((killer != 'A') + (killer == 'C') + (killer == 'D') + (killer != 'D') == 3)
+//		{
+//			printf("凶手是%c\n", killer);
+//		}
+//	}
+//	return 0;
+//}
+
+
+
+//打印杨辉三角
+//#include<stdio.h>
+//#define N 4
+//int main()
+//{
+//	int arr[100][100] = { 0 };
+//	int x = 0;
+//	int y = 0;
+//	for (x = 1; x <= N; x++)
+//	{
+//		for (y = 1; y <= x; y++)
+//		{
+//			if (y == 1 || y == x)
+//			{
+//				arr[x][y] = 1;
+//				printf("%d ", arr[x][y]);
+//			}
+//			else
+//			{
+//				arr[x][y] = arr[x - 1][y - 1] + arr[x - 1][y];
+//				printf("%d ", arr[x][y]);
+//			}
+//		}
+//		printf("\n");
+//	}
+//	return 0;
+//}
