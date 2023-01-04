@@ -34,3 +34,39 @@
 //
 //	return 0;
 //}
+
+
+
+//指针数组 - 存放指针的数组
+//int main()
+//{
+//	//存放字符指针的数组
+//	const char* arr[4] = { "abcd","dsa","isis","sdisd" };
+//	int i = 0;
+//	for (i = 0; i < 4; i++)
+//	{
+//		printf("%s\n", arr[i]);
+//		printf("%p\n", arr[i]);
+//	}
+//	return 0;
+//}
+
+//int main()
+//{
+//	int arr1[5] = { 1,2,3,4,5 };
+//	int arr2[5] = { 2,4,6,8,0 };
+//	int arr3[5] = { 1,3,5,7,9 };
+//	int arr4[5] = { 0,0,0,0,0 };
+//	int* arr[4] = { arr1,arr2,arr3,arr4 };
+//	int i = 0;
+//	for (i = 0; i < 4; i++)
+//	{
+//		int j = 0;
+//		for (j = 0; j < 5; j++)
+//		{
+//			printf("%d ", arr[i][j]);//*(arr[i]+j)
+//		}
+//		printf("\n");
+//	}
+//	return 0;
+//}
