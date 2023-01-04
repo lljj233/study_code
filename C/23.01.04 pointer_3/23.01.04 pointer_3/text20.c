@@ -111,3 +111,43 @@
 //	printf("%p\n", &arr + 1);//+40
 //	return 0;
 //}
+
+
+
+//不同方法打印二维数组
+//void print1(int arr[3][4], int r, int c)
+//{
+//	int i = 0;
+//	for (i = 0; i < r; i++)
+//	{
+//		int j = 0;
+//		for (j = 0; j < c; j++)
+//		{
+//			printf("%d ", arr[i][j]);
+//		}
+//		printf("\n");
+//	}
+//}
+//
+//void print2(int(*p)[4], int r, int c)
+//{
+//	int i = 0;
+//	for (i = 0; i < r; i++)
+//	{
+//		int j = 0;
+//		for (j = 0; j < c; j++)
+//		{			
+//			//printf("%d ", (*(p + i))[j]);
+//			printf("%d ", p[i][j]);
+//		}
+//		printf("\n");
+//	}
+//}
+//
+//int main()
+//{
+//	int arr[3][4] = { {1,2,3,4}, {2,3,4,5} , {3,4,5,6} };
+//	//print1(arr, 3, 4);
+//	print2(arr, 3, 4);
+//	return 0;
+//}
