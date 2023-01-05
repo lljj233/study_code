@@ -240,3 +240,23 @@
 //	test(&p);
 //	return 0;
 //}
+
+
+
+//函数指针 - 指向函数的指针
+//int add(int x, int y)
+//{
+//	return x + y;
+//}
+//int main()
+//{
+//	int(*p)(int, int) = &add;//相当于int(*p)(int, int) =add;
+//	//&函数名和函数名都是函数的地址
+//	//p是一个存放函数地址的指针变量，也就是函数指针。
+//
+//	int ret = (*p)(2, 3);//也可以写成int ret = p(2, 3);
+//	//通过函数指针调用函数
+//	printf("%d\n", ret);
+//
+//	return 0;
+//}
