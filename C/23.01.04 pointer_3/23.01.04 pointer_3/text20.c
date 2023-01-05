@@ -151,3 +151,26 @@
 //	print2(arr, 3, 4);
 //	return 0;
 //}
+
+
+
+//一维数组传参
+//#include <stdio.h>
+//void test(int arr[])
+//{}
+//void test(int arr[10])
+//{}
+//void test(int* arr)
+//{}
+//void test2(int* arr[20])
+//{}
+//void test2(int** arr)
+//{}
+////上述传参都是可行的
+//int main()
+//{
+//	int arr[10] = { 0 };
+//	int* arr2[20] = { 0 };
+//	test(arr);
+//	test2(arr2);
+//}
