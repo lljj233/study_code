@@ -93,3 +93,13 @@
 //	} while (input);
 //	return 0;
 //}
+
+
+
+//指向函数指针数组的指针
+//int main()
+//{
+//	int(*pf[5])(int,int);//函数指针数组
+//	int(*(*ppf[5]))(int, int) = &pf;//指向函数指针数组的指针
+//	return 0;
+//}
