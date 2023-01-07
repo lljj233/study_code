@@ -18,3 +18,16 @@
 //	//函数指针
 //	int (*pf)(const char*)=&my_strlen;
 //}
+
+
+
+//函数指针数组 - 存放函数指针的数组
+//my_strlen(const char* str)
+//{
+//	return 0;
+//}
+//int main()
+//{
+//	int (*pfA[5])(const char*) = { &my_strlen };//可以存放五个函数的地址
+//	return 0;
+//}
