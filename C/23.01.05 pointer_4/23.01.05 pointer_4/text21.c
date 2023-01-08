@@ -1,5 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include<stdio.h>
+#include<stdlib.h>
 
 
 //my_strlen(const char* str)
@@ -202,7 +203,6 @@
 
 
 ////实现一个比较整型的函数
-//#include<stdlib.h>
 //int cmp_int(const void* e1, const void* e2)
 //{
 //	return *(int*)e1 - *(int*)e2;
@@ -233,3 +233,30 @@
 
 
 
+//qsort排序结构体
+//struct stu
+//{
+//	char name[20];
+//	int age;
+//};
+////按照学生的年龄来排序
+//int cmp_stu_by_age(const void* e1, const void* e2)
+//{
+//	return ((struct stu*)e1)->age - ((struct stu*)e2)->age;
+//}
+//int cmp_stu_by_name(const void* e1, const void* e2)
+//{
+//	return strcmp(((struct stu*)e1)->name,((struct stu*)e2)->name);
+//}
+//void test2()
+//{
+//	struct stu s[3] = { {"李四",20},{"张三",18},{"王五",22} };
+//	int sz = sizeof(s) / sizeof(s[0]);
+//	//qsort(s, sz, sizeof(s[0]), cmp_stu_by_age);
+//	qsort(s, sz, sizeof(s[0]), cmp_stu_by_name);
+//}
+//int main()
+//{
+//	test2();
+//	return 0;
+//}
