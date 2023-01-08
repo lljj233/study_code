@@ -189,6 +189,18 @@
 
 
 
+
+//qsort的用法
+//void qsort(void* base,//待排序的数组的起始地址
+//	       size_t num,//元素个数
+//	       size_t width,//一个元素的大小
+//	       int (*cmp)(const void* e1,const void* e2)//两个元素的比较函数
+//           )
+//{}
+
+
+
+
 ////实现一个比较整型的函数
 //#include<stdlib.h>
 //int cmp_int(const void* e1, const void* e2)
@@ -218,3 +230,6 @@
 //	test1();
 //	return 0;
 //}
+
+
+
