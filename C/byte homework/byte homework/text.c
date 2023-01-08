@@ -1892,3 +1892,32 @@
 //	}
 //	return 0;
 //}
+
+
+
+//写一个函数，判断一个字符串是否为另外一个字符串旋转之后的字符串。
+//#include <stdio.h>
+//#include <string.h>
+//int is_left_revolve(char* str1, char* str2)
+//{
+//	int len1 = strlen(str1);
+//	int len2 = strlen(str2);
+//	if (len1 != len2)
+//		return 0;
+//	strncat(str1, str1, len1);
+//	char* ret = strstr(str1, str2);
+//	if (ret == NULL) 
+//		return 0;
+//	else 
+//		return 1;
+//}
+//int main() {
+//	char arr1[30] = "AABCD";
+//	char arr2[30] = " BCDAA";
+//	int ret = is_left_revolve(arr1, arr2);
+//	if (ret == 1) 
+//		printf("YES\n");
+//	else
+//		printf("NO\n");
+//	return 0;
+//}
