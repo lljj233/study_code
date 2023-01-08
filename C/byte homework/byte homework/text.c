@@ -1825,3 +1825,40 @@
 //	}
 //	return 0;
 //}
+
+
+
+//有一个数字矩阵，矩阵的每行从左到右是递增的，矩阵从上到下是递增的，请编写程序在这样的矩阵中查找某个数字是否存在。
+//#include<stdio.h>
+//void find_key(int a[3][3], int row, int col, int key)
+//{
+//	int i = 0;//从第0行开始找
+//	int j = col - 1;//从第0行的最后一位开始找
+//	while (i < row && j >= 0)//条件小于第row行,大于等于第0位
+//	{
+//		if (key > a[i][j])//大于最后一位，行数+1
+//		{
+//			i++;
+//		}
+//		else if (key < a[i][j])//小于最后一位，位数向前-1
+//		{
+//			j--;
+//		}
+//		else 
+//		{
+//			printf("找到了,下标为%d %d\n", i, j);
+//			return;
+//		}
+//	}
+//	printf("找不到");
+//	return 0;
+//}
+//
+//int main()
+//{
+//	int a[3][3] = { 1,2,3,4,5,6,7,8,9 };
+//	int key;
+//	scanf("%d", &key);
+//	find_key(a, 3, 3, key);
+//	return 0;
+//}
