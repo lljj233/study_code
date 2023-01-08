@@ -186,3 +186,35 @@
 //	} while (input);
 //	return 0;
 //}
+
+
+
+////实现一个比较整型的函数
+//#include<stdlib.h>
+//int cmp_int(const void* e1, const void* e2)
+//{
+//	return *(int*)e1 - *(int*)e2;
+//}
+//
+////使用qsort对数组进行排序，升序
+//void test1()
+//{
+//
+//	int arr[] = { 9,8,7,6,5,4,3,2,1,0 };
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	//bubble_sort(arr, sz);
+//	//库函数中一个排序函数：qsort
+//	//qsort(arr, sz, sizeof(arr[0]), cmp_int);
+//	//0 1 2 3 4 5 6 7 8 9
+//	//打印
+//	int i = 0;
+//	for (i = 0; i < sz; i++)
+//	{
+//		printf("%d ", arr[i]);
+//	}
+//}
+//int main()
+//{
+//	test1();
+//	return 0;
+//}
