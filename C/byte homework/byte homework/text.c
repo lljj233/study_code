@@ -1862,3 +1862,33 @@
 //	find_key(a, 3, 3, key);
 //	return 0;
 //}
+
+
+
+//实现一个函数，可以左旋字符串中的k个字符。
+//#include<stdio.h>
+//void levorotation(char* p, int s, int n)
+//{
+//	int i = 0, j = 0;
+//	for (; j < n; j++)
+//	{
+//		char a = *(p + 0);
+//		for (i = 1; i < s; i++)
+//		{
+//			*(p + i - 1) = *(p + i);
+//		}
+//		*(p + i - 1) = a;
+//	}
+//}
+//int main() {
+//	char arr[] = { 'A', 'B', 'C', 'D', 'E' };
+//	int k = 0;
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	scanf("%d", &k);
+//	levorotation(arr, sz, k);
+//	for (int i = 0; i < sz; i++)
+//	{
+//		printf("%c ", arr[i]);
+//	}
+//	return 0;
+//}
