@@ -1,6 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include<stdio.h>
 #include<assert.h>
+#include<string.h>
 
 
 //自定义函数计算字符串长度
@@ -61,5 +62,23 @@
 //		printf(">\n");
 //	else
 //		printf("<=n");
+//	return 0;
+//}
+
+
+
+//strcpy - 拷贝字符串函数
+//源字符串必须以 '\0' 结束
+//会将源字符串中的 '\0' 拷贝到目标空间。
+//目标空间必须足够大，以确保能存放源字符串。
+//目标空间必须可变
+//int main()
+//{
+//	char arr1[20] = { "xxxxxxxxx" };
+//	char arr2[] = "hello world";
+//	strcpy(arr1, arr2);//把arr2放到arr1
+//
+//	//char* p = "sdhisidjs";//常量字符串
+//	//strcpy(p, arr2);//常量字符串不能被修改
 //	return 0;
 //}
