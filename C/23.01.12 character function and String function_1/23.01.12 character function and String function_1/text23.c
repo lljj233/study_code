@@ -48,3 +48,18 @@
 //	printf("%d", len);
 //	return 0;
 //}
+
+
+
+//strlen是求字符串长度的，求出的长度不可能为负数，所以返回类型为size_t,即无符号的整型
+//typedef unsigned int size_t;
+//size_t strlen(const char* string);
+
+//int main()
+//{
+//	if (strlen("abc") - strlen("abcdef") > 0)
+//		printf(">\n");
+//	else
+//		printf("<=n");
+//	return 0;
+//}
