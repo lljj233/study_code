@@ -213,3 +213,17 @@
 //	printf("%s\n", arr1);
 //	return 0;
 //}
+
+
+
+//strncmp
+//int strncmp(const char* str1, const char* str2, size_t num);
+//比较到出现另个字符不一样或者一个字符串结束或者num个字符全部比较完
+//int main()
+//{
+//	char* p1 = "abcdef";
+//	char* p2 = "abciuf";
+//	int ret = strncmp(p1, p2, 4);
+//	printf("%d\n", ret);
+//	return 0;
+//}
