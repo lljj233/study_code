@@ -117,3 +117,29 @@
 //	printf("%s\n", arr1);
 //	return 0;
 //}
+
+//模拟实现strcat
+//char* my_strcat(char* dest, const char* src)
+//{
+//	assert(dest && src);
+//	char* ret = dest;
+//	//1.找目标空间末尾的\0
+//	while (*dest)
+//	{
+//		dest++;
+//	}
+//	while (*dest++ = *src++)
+//	{
+//		;
+//	}
+//	return ret;
+//	//2.追加
+//}
+//int main()
+//{
+//	char arr1[20] = "hello";
+//	char arr2[] = " world";
+//	my_strcat(arr1, arr2);
+//	printf("%s\n", arr1);
+//	return 0;
+//}
