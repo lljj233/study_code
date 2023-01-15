@@ -227,3 +227,19 @@
 //	printf("%d\n", ret);
 //	return 0;
 //}
+
+
+
+//strstr - 字符串查找
+//char * strstr ( const char *str1, const char * str2);
+//int main()
+//{
+//	char arr1[] = "uhusdihdf";
+//	char arr2[] = "sdih";
+//	char* ret = strstr(arr1, arr2);//返回s的地址
+//	if (ret == NULL)
+//		printf("找不到\n");
+//	else
+//		printf("%s\n", ret);;
+//	return 0;
+//}
