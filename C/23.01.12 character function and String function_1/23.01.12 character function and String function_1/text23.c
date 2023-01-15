@@ -128,12 +128,12 @@
 //	{
 //		dest++;
 //	}
-//	while (*dest++ = *src++)
+//	//2.追加
+// 	while (*dest++ = *src++)
 //	{
 //		;
 //	}
 //	return ret;
-//	//2.追加
 //}
 //int main()
 //{
@@ -141,5 +141,20 @@
 //	char arr2[] = " world";
 //	my_strcat(arr1, arr2);
 //	printf("%s\n", arr1);
+//	return 0;
+//}
+
+
+
+//strcmp - 比较两个字符串的大小
+//第一个字符串大于第二个字符串，则返回大于0的数字
+//第一个字符串等于第二个字符串，则返回0
+//第一个字符串小于第二个字符串，则返回小于0的数字
+//int main()
+//{
+//	char arr1[] = "abadef";
+//	char arr2[] = "abc";
+//	int ret = strcmp(arr1, arr2);
+//	printf("%d", ret);
 //	return 0;
 //}
