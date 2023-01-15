@@ -199,3 +199,17 @@
 //	printf("%s\n", arr1);
 //	return 0;
 //}
+
+
+
+
+//strncat
+//char* strncat(char* destination, const char* source, size_t num);
+//int main()
+//{
+//	char arr1[20] = "---------";
+//	char arr2[] = "abcdef";
+//	strncat(arr1, arr2, 5);
+//	printf("%s\n", arr1);
+//	return 0;
+//}
