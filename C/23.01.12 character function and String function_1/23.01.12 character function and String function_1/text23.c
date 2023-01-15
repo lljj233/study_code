@@ -82,3 +82,23 @@
 //	//strcpy(p, arr2);//常量字符串不能被修改
 //	return 0;
 //}
+
+//模拟实现strcpy函数
+//char* my_strcpy(char* dest, const char* src)
+//{
+//	char* ret = dest;
+//	assert(dest && src);
+//	while (*dest++ = *src++)
+//	{
+//		;
+//	}
+//	return ret;
+//}
+//int main()
+//{
+//	char arr1[20] = "";
+//	char arr2[] = "hello world";
+//	my_strcpy(arr1, arr2);//把arr2放到arr1
+//	printf("%s\n", arr1);
+//	return 0;
+//}
