@@ -183,3 +183,19 @@
 //	printf("%d", ret);
 //	return 0;
 //}
+
+
+
+//strncpy
+//拷贝num个字符从源字符串到目标空间。
+//如果源字符串的长度小于num，则拷贝完源字符串之后，在目标的后边追加0，直到num个
+//char* strncpy(char* destination, const char* source, size_t num);
+//int main()
+//{
+//	char arr1[20] = "---------";
+//	char arr2[] = "abcdef";
+//	strncpy(arr1, arr2, 3);
+//	//strncpy(arr1, arr2, 10);
+//	printf("%s\n", arr1);
+//	return 0;
+//}
