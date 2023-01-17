@@ -321,3 +321,22 @@
 //
 //	return 0;
 //}
+
+
+
+//strerror
+//char * strerror ( int errnum );
+//返回错误码，所对应的错误信息。
+//C语言的库函数在运行时，如果发生错误，会将错误码存在一个变量error中
+//错误码是一些数字：1，2，3，4，5
+//需要将错误码翻译成错误信息
+//int main()
+//{
+//	printf("%s\n", strerror(0));//No error
+//	printf("%s\n", strerror(1));//Operation not permitted
+//	printf("%s\n", strerror(2));//No such file or directory
+//	printf("%s\n", strerror(3));//No such process
+//	printf("%s\n", strerror(4));//Interrupted function call
+//	printf("%s\n", strerror(5));//Input/output error
+//	return 0;
+//}
