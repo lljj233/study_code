@@ -327,7 +327,7 @@
 //strerror
 //char * strerror ( int errnum );
 //返回错误码，所对应的错误信息。
-//C语言的库函数在运行时，如果发生错误，会将错误码存在一个变量error中
+//C语言的库函数在运行时，如果发生错误，会将错误码存在一个变量errno中
 //错误码是一些数字：1，2，3，4，5
 //需要将错误码翻译成错误信息
 //int main()
@@ -338,5 +338,23 @@
 //	printf("%s\n", strerror(3));//No such process
 //	printf("%s\n", strerror(4));//Interrupted function call
 //	printf("%s\n", strerror(5));//Input/output error
+//	return 0;
+//}
+
+//实际中使用strerror的情况
+//int main()
+//{
+//	//打开文件
+//	FILE* pf = fopen("test.txt", "r");
+//	if (pf == NULL)
+//	{
+//		printf("打开文件失败\n");
+//		printf("%s\n", strerror(errno));
+//	}
+//	else
+//		printf("打开文件成功\n");
+//	//关闭文件
+//	fclose(pf);
+//	pf = NULL;
 //	return 0;
 //}
