@@ -429,3 +429,20 @@
 //	}
 //	return 0;
 //}
+
+//将数组中所有的小写字母转换成大写字母，改变原数组
+//int main()
+//{
+//	char arr[] = "i HAVE aN APPle.";
+//	int i = 0;
+//	while (arr[i])
+//	{
+//		if (islower(arr[i]))
+//		{
+//			arr[i] = toupper(arr[i]);
+//		}
+//		i++;
+//	}
+//	printf("%s\n", arr);
+//	return 0;
+//}
