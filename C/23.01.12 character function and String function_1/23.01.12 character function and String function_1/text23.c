@@ -401,3 +401,31 @@
 //		printf("不是数字字符\n");
 //	return 0;
 //}
+
+
+
+//字符大小写转换
+//int main()
+//{
+//	int ret = toupper('a');
+//	printf("%c\n", ret);
+//	return 0;
+//}
+
+//将数组中所有的小写字母转换成大写字母，不改变原数组
+//int main()
+//{
+//	char arr[] = "i HAVE aN APPle.";
+//	int i = 0;
+//	while (arr[i])
+//	{
+//		if (islower(arr[i]))
+//		{
+//			printf("%c", toupper(arr[i]));
+//		}
+//		else
+//			printf("%c", arr[i]);
+//		i++;
+//	}
+//	return 0;
+//}
