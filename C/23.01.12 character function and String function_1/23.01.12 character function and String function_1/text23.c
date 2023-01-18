@@ -389,3 +389,15 @@
 //		printf("不是小写字符\n");
 //	return 0;
 //}
+
+//判断是否是数字字符
+//int main()
+//{
+//	char ch = 'q';
+//	int ret = isdigit(ch);
+//	if (ret != 0)
+//		printf("是数字字符\n");
+//	else
+//		printf("不是数字字符\n");
+//	return 0;
+//}
