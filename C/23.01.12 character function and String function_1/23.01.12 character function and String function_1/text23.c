@@ -2,6 +2,7 @@
 #include<stdio.h>
 #include<assert.h>
 #include<string.h>
+#include<ctype.h>
 
 
 //自定义函数计算字符串长度
@@ -374,3 +375,17 @@
 //ispunct  |标点符号，任何不属于数字或者字母的图形字符（可打印）
 //isgraph  |任何图形字符
 //isprint  |任何可打印字符，包括图形字符和空白字符
+
+
+
+//判断是否是小写字符
+//int main()
+//{
+//	char ch = 'a';
+//	int ret = islower(ch);
+//	if (ret != 0)
+//		printf("是小写字符\n");
+//	else
+//		printf("不是小写字符\n");
+//	return 0;
+//}
