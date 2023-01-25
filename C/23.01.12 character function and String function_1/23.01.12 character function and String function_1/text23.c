@@ -530,3 +530,16 @@
 //	return 0;
 //}
 
+
+
+//memcmp - 比较从ptr1和ptr2指针开始的num个字节
+//int memcmp ( const void * ptr1, const void* ptr2,size_t num );
+//int main()
+//{
+//	int arr1[] = { 1,2,3,4 };
+//	int arr2[] = { 1,2,3,5 };
+//	int ret = memcmp(arr1, arr2, 13);
+//	printf("%d", ret);
+//	return 0;
+//}
+
