@@ -31,3 +31,12 @@
 //	return 0;
 //}
 
+
+
+//结构体的自引用
+//struct Node
+//{
+//	int data;
+//	struct Node* next;
+//};
+
