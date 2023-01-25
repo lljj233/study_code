@@ -543,3 +543,19 @@
 //	return 0;
 //}
 
+
+
+//memset - 内存设置函数
+//以字节为单位来设置内存中的数据
+//int main()
+//{
+// 	char arr[] = "hello world";
+//	memset(arr, 'x', 5);
+//	memset(arr+6, 'y', 5);
+//	printf("%s\n",arr);
+//
+//	int arr1[10] = { 1,2,3,4,5,6,7,8,9,10 };
+//	memset(arr1, 0, 40);
+//	return 0;
+//}
+
