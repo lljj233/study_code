@@ -106,3 +106,20 @@
 //	return 0;
 //}
 
+
+
+//修改默认对齐数 - #pragma pack()
+//#pragma pack(2)//设置默认对齐数为4
+//struct A
+//{
+//	char a;
+//	int b;
+//	char c;
+//};
+//#pragma pack()//恢复默认对齐数
+//int main()
+//{
+//	printf("%d", sizeof(struct A));
+//	return 0;
+//}
+
