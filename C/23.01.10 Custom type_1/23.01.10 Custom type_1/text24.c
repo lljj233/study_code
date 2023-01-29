@@ -143,3 +143,28 @@
 //	return 0;
 //}
 
+
+
+
+//位段的内存分配
+//VS2019上验证：位段的内存开辟和使用
+//struct S
+//{
+//	char a : 3;
+//	char b : 4;
+//	char c : 5;
+//	char d : 4;
+//};
+//int main()
+//{
+//	struct S s = { 0 };
+//	s.a = 10;
+//	s.b = 12;
+//	s.c = 3;
+//	s.d = 4;
+//	//由低到高
+//	printf("%d", sizeof(s));
+//
+//	return 0;
+//}
+
