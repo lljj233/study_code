@@ -123,3 +123,23 @@
 //	return 0;
 //}
 
+
+
+//位段
+
+//位段的声明和结构是类似的，有两个不同：
+//1.位段的成员必须是 int、unsigned int 或signed int。
+//2.位段的成员名后边有一个冒号和一个数字。
+//struct A
+//{
+//	int _a : 2;//表示该变量(_a)只占2byte
+//	int _b : 5;
+//	int _c : 10;
+//	int _d : 30;
+//};
+//int main()
+//{
+//	printf("%d", sizeof(struct A));
+//	return 0;
+//}
+
