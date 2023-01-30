@@ -168,3 +168,51 @@
 //	return 0;
 //}
 
+
+
+//枚举
+//枚举顾名思义就是一一列举。
+//把可能的取值一一列举。
+//enum Day//星期
+//{
+//	Mon,//0  默认递增
+//	Tues,//1
+//	Wed,
+//	Thur,
+//	Fri,
+//	Sat,
+//	Sun//6
+//};
+//enum Sex//性别
+//{
+//	MALE,
+//	FEMALE,
+//	SECRET
+//};
+//enum Color//颜色
+//{
+//	RED,
+//	GREEN,
+//	BLUE
+//};
+//int main()
+//{
+//	enum Color s1;
+//	int s2;
+//	printf("%d\n", RED);
+//	printf("%d\n", GREEN);
+//	printf("%d\n", BLUE);
+//	return 0;
+//}
+
+////以上定义的 enum Day ， enum Sex ， enum Color 都是枚举类型。
+////{}中的内容是枚举类型的可能取值，也叫 枚举常量 。
+////这些可能取值都是有值的，默认从0开始，一次递增1，当然在定义的时候也可以赋初值。
+
+//enum Color//颜色
+//{
+//	RED = 1,
+//	GREEN = 2,
+//	BLUE = 4
+//};
+
