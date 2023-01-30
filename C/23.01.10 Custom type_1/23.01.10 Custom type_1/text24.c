@@ -244,3 +244,24 @@
 //	return 0;
 //}
 
+
+
+//联合(共用体)
+//联合也是一种特殊的自定义类型
+//这种类型定义的变量也包含一系列的成员，特征是这些成员公用同一块空间（所以联合也叫共用体）。
+//union UN
+//{
+//	//c和i不能同时使用
+//	char c;
+//	int i;
+//};
+//int main()
+//{
+//	union UN un;
+//	printf("%d\n", sizeof(un));
+//	printf("%p\n", &un);
+//	printf("%p\n", &(un.c));
+//	printf("%p\n", &(un.i));
+//	return 0;
+//}
+
