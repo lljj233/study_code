@@ -225,3 +225,22 @@
 //4. 便于调试
 //5. 使用方便，一次可以定义多个常量
 
+
+
+//枚举的注意事项
+//enum Color//颜色
+//{
+//	RED = 1,
+//	GREEN = 2,
+//	BLUE = 4
+//};
+//int main()
+//{
+//	enum Color a = GREEN;
+//	//int a = RED;只能拿枚举常量给枚举变量赋值，才不会出现类型的差异。
+//	printf("%d\n", a);
+//	printf("%d\n", sizeof(a));
+//	printf("%d\n", sizeof(enum Color));
+//	return 0;
+//}
+
