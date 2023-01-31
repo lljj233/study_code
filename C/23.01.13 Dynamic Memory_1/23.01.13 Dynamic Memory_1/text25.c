@@ -38,3 +38,28 @@
 //}
 //malloc和free都声明在 stdlib.h 头文件中。
 
+
+
+//calloc
+//int main()
+//{
+//	int* p = (int*)calloc(10, sizeof(int));
+//	if (p == NULL)
+//	{
+//		perror("calloc");
+//		return 1;
+//	}
+//	//使用
+//	int i = 0;
+//	for (i = 0; i < 10; i++)
+//	{
+//		printf("%d ", *(p + i));
+//		//malloc申请到的空间没有初始化就会直接返回起始地址
+//		//calloc申请好空间后会把空间初始化为0然后返回起始地址
+//	}
+//	//释放
+//	free(p);
+//	p = NULL;
+//	return 0;
+//}
+
