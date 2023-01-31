@@ -63,3 +63,39 @@
 //	return 0;
 //}
 
+
+
+//realloc
+//int main()
+//{
+//	int* p = (int*)malloc(5 * sizeof(int));
+//	if (p == NULL)
+//	{
+//		perror("malloc");
+//		return 1;
+//	}
+//	//使用
+//	int i = 0;
+//	for (i = 0; i < 5; i++)
+//	{
+//		*(p + i) = 1;
+//	}
+//	//不够后增加5个整型的空间
+//	//如果扩容失败则返回NULL
+//	int* ptr = (int*)realloc(p, 10 * sizeof(int));
+//	if (ptr != NULL)
+//	{
+//		p = ptr;
+//      ptr = NULL; 
+//	}
+//	//继续使用空间
+//	for (i = 0; i < 10; i++)
+//	{
+//		printf("%d ", *(p + i));
+//	}
+//	//释放
+//	free(p);
+//	p = NULL;
+//	return 0;
+//}
+
