@@ -236,6 +236,30 @@
 //	return 0;
 //}
 
+//Ä£ÄâÊµÏÖstrncat
+//char* my_strncat(char* dest, const char* src, size_t num)
+//{
+//	assert(dest && src);
+//	char* str = dest;
+//	while (*dest)
+//		dest++;
+//	while (num--)
+//	{
+//		*dest++ = *src++;
+//	}
+//	*dest = '\0';
+//	return str;
+//}
+//int main()
+//{
+//	char arr1[20] = "---------";
+//	char arr2[] = "abcdef";
+//	my_strncat(arr1, arr2, 5);
+//	printf("%s\n", arr1);
+//	return 0;
+//}
+
+
 
 
 //strncmp
