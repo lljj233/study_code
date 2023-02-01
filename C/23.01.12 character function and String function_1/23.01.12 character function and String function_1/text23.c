@@ -201,6 +201,27 @@
 //	return 0;
 //}
 
+//Ä£ÄâÊµÏÖstrncpy
+//char* my_strncpy(char* dest, const char* src, size_t num)
+//{
+//	assert(dest&&src);
+//	char* str = dest;
+//	while (num--)
+//	{
+//		*dest++ = *src++;
+//	}
+//	return str;
+//}
+//int main()
+//{
+//	char arr1[20] = "---------";
+//	char arr2[] = "abcdef";
+//	my_strncpy(arr1, arr2, 3);
+//
+//	printf("%s\n", arr1);
+//	return 0;
+//}
+
 
 
 
