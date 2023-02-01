@@ -1921,3 +1921,40 @@
 //		printf("NO\n");
 //	return 0;
 //}
+
+
+
+//一个数组中只有两个数字是出现一次，其他所有数字都出现了两次。
+//编写一个函数找出这两个只出现一次的数字。
+//#include<stdio.h>
+//void Find(const int* arr, size_t num)
+//{
+//	for (int i = 0; i < num; i++)
+//	{
+//		int flag = 1;
+//		for (int j = 0; j < num; j++)
+//		{
+//			if (j == i)
+//			{
+//				continue;
+//			} 
+//			if (arr[j] == arr[i])
+//			{
+//				flag = 0;
+//				break;
+//			}
+//		}
+//		if (flag == 1)
+//		{
+//			printf("%d ", arr[i]);
+//		}
+//	}
+//}
+//int main()
+//{
+//	int arr[] = { 1,1,4,4,5,6,8,8,9,9 };
+//	int size = sizeof(arr) / sizeof(arr[0]);
+//	Find(arr, size);
+//	return 0;
+//}
+
