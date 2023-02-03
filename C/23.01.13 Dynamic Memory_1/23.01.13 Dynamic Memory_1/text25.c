@@ -198,3 +198,171 @@
 //	return 0;
 //}
 
+
+
+//内存笔试题
+
+//1.
+//void GetMemory(char* p)
+//{
+//	p = (char*)malloc(100);
+//}
+//void Test(void)
+//{
+//	char* str = NULL;
+//	GetMemory(str);
+//	strcpy(str, "hello world");
+//	printf(str);
+//}
+//int main()
+//{
+//	Test();
+//	return 0;
+//}
+
+//1.str传给p的时候，p是str的临时拷贝，有自己独立的空间。
+//  当GetMemory函数内部申请了空间之后，地址放在p中，str依然是NUll。
+//  当GetMemory函数返回之后，strcmp拷贝的时候，形成了非法访问内存。
+//2.在GetMemory函数内部，动态申请了内存却没有释放，会造成内存泄露。
+
+//修改：
+//void GetMemory(char** p)//
+//{
+//	*p = (char*)malloc(100);//
+//}
+//void Test(void)
+//{
+//	char* str = NULL;
+//	GetMemory(&str);//
+//	strcpy(str, "hello world");
+//	printf(str);
+//	free(str);
+//	str = NULL;
+//}
+//int main()
+//{
+//	Test();
+//	return 0;
+//}
+
+
+//2.
+//char* GetMemory(void)
+//{
+//	char p[] = "hello world";
+//	return p;
+//}
+//void Test(void)
+//{
+//	char* str = NULL;
+//	str = GetMemory();
+//	printf(str);
+//}
+//int main()
+//{
+//	Test();
+//	return 0;
+//}
+
+//返回栈空间地址错误
+//返回地址但是该操作空间已经销毁，形成非法访问
+
+//修改：
+//char* GetMemory(void)
+//{
+//	char* p = "hello world";
+//	//static char p[] = "hello world";
+//	return p;
+//}
+//void Test(void)
+//{
+//	char* str = NULL;
+//	str = GetMemory();
+//	printf(str);
+//}
+//int main()
+//{
+//	Test();
+//	return 0;
+//}
+
+
+//3.
+//void GetMemory(char** p, int num)
+//{
+//	*p = (char*)malloc(num);
+//}
+//void Test(void)
+//{
+//	char* str = NULL;
+//	GetMemory(&str, 100);
+//	strcpy(str, "hello");
+//	printf(str);
+//}
+//int main()
+//{
+//	Test();
+//	return 0;
+//}
+
+//没有释放内存，造成内存泄露
+
+//修改：
+//void GetMemory(char** p, int num)
+//{
+//	*p = (char*)malloc(num);
+//}
+//void Test(void)
+//{
+//	char* str = NULL;
+//	GetMemory(&str, 100);
+//	strcpy(str, "hello");
+//	printf(str);
+//	free(str);
+//	str = NULL;
+//}
+//int main()
+//{
+//	Test();
+//	return 0;
+//}
+
+//4.
+//void Test(void)
+//{
+//	char* str = (char*)malloc(100);
+//	strcpy(str, "hello");
+//	free(str);
+//	if (str != NULL)
+//	{
+//		strcpy(str, "world");
+//		printf(str);
+//	}
+//}
+//int main()
+//{
+//	Test();
+//	return 0;
+//}
+
+//str被free后空间被操作系统回收，此时的str为野指针，打印str时形成非法访问
+
+//修改：
+//void Test(void)
+//{
+//	char* str = (char*)malloc(100);
+//	strcpy(str, "hello");
+//	free(str);
+//	str = NULL;
+//	if (str != NULL)
+//	{
+//		strcpy(str, "world");
+//		printf(str);
+//	}
+//}
+//int main()
+//{
+//	Test();
+//	return 0;
+//}
+
