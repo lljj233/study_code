@@ -35,3 +35,37 @@
 //	return 0;
 //}
 
+
+
+//文件的顺序读写
+
+//fgetc - 字符输入函数
+//int main()
+//{
+//	//以只写的方式打开文件
+//	FILE* pf = fopen("test.txt", "w");
+//	//判断返回值
+//	if (pf == NULL)
+//	{
+//		perror("fopen");
+//		return 1;
+//	}
+//	//写文件
+//
+//	/*fputc('a', pf);
+//	fputc('b', pf);
+//	fputc('c', pf);
+//	fputc('d', pf);
+//	fputc('e', pf);*/
+//
+//	char ch = 0;
+//	for (ch = 'a'; ch <= 'z'; ch++)
+//	{
+//		fputc(ch, pf);
+//	}
+//	//关闭文件
+//	fclose(pf);
+//	pf = NULL;
+//	return 0;
+//}
+
