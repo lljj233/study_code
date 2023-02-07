@@ -178,3 +178,33 @@
 //	return 0;
 //}
 
+
+
+//格式化的读取文件
+//struct S
+//{
+//	char name[20];
+//	int age;
+//	float score;
+//};
+//int main()
+//{
+//	struct S s = { 0 };
+//	FILE* pf = fopen("test.txt", "r");
+//	if (NULL == pf)
+//	{
+//		perror("fopen");
+//		return 1;
+//	}
+//	//格式化的读取文件
+//	fscanf(pf, "%s %d %f", s.name, &(s.age), &(s.score));
+//	
+//	//打印看数据
+//	printf("%s %d %f\n", s.name, s.age, s.score);
+//	
+//	//关闭文件
+//	fclose(pf);
+//	pf = NULL;
+//	return 0;
+//}
+
