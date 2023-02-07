@@ -69,3 +69,39 @@
 //	return 0;
 //}
 
+
+
+//读文件
+//int main()
+//{
+//	//以只读的方式打开文件
+//	FILE* pf = fopen("test.txt", "r");
+//	//判断返回值
+//	if (pf == NULL)
+//	{
+//		perror("fopen");
+//		return 1;
+//	}
+//	//读文件
+//
+//	/*int ch = fgetc(pf);
+//	printf("%c ", ch);
+//
+//	ch = fgetc(pf);
+//	printf("%c ", ch);
+//
+//	ch = fgetc(pf);
+//	printf("%c ", ch);*/
+//
+//	int i = 0;
+//	for (i = 0; i < 26; i++)
+//	{
+//		int ch = fgetc(pf);
+//		printf("%c ", ch);
+//	}
+//	//关闭文件
+//	fclose(pf);
+//	pf = NULL;
+//	return 0;
+//}
+
