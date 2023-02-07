@@ -127,3 +127,29 @@
 //	return 0;
 //}
 
+
+
+//读一行文件（fgets - 文本行输入函数）
+//int main()
+//{
+//	//以只读的方式打开文件
+//	FILE* pf = fopen("test.txt", "r");
+//	//判断返回值
+//	if (pf == NULL)
+//	{
+//		perror("fopen");
+//		return 1;
+//	}
+//	//读一行文件
+//	char buf[20] = { 0 };
+//	fgets(buf, 20, pf);
+//	printf("%s", buf);
+//
+//	fgets(buf, 20, pf);
+//	printf("%s", buf);
+//	//关闭文件
+//	fclose(pf);
+//	pf = NULL;
+//	return 0;
+//}
+
