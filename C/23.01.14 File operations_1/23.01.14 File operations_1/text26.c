@@ -105,3 +105,25 @@
 //	return 0;
 //}
 
+
+
+//写一行文件（fputs - 文本行输出函数）
+//int main()
+//{
+//	//以只写的方式打开文件
+//	FILE* pf = fopen("test.txt", "w");
+//	//判断返回值
+//	if (pf == NULL)
+//	{
+//		perror("fopen");
+//		return 1;
+//	}
+//	//写一行文件
+//	fputs("hello world\n", pf);
+//	fputs("abcdef\n", pf);
+//	//关闭文件
+//	fclose(pf);
+//	pf = NULL;
+//	return 0;
+//}
+
