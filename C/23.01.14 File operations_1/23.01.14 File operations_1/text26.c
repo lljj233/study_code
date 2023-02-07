@@ -153,3 +153,28 @@
 //	return 0;
 //}
 
+
+
+//格式化的写入文件
+//struct S
+//{
+//	char name[20];
+//	int age;
+//	float score;
+//};
+//int main()
+//{
+//	struct S s = { "zhangsan", 20, 95.5 };
+//	FILE* pf = fopen("test.txt", "w");
+//	if (NULL == pf)
+//	{
+//		perror("fopen");
+//		return 1;
+//	}
+//	fprintf(pf, "%s %d %f\n", s.name, s.age, s.score);
+//	//关闭文件
+//	fclose(pf);
+//	pf = NULL;
+//	return 0;
+//}
+
