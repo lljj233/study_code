@@ -262,3 +262,29 @@
 //	return 0;
 //}
 
+
+
+//sscanf与sprintf
+//sscanf - 从一个字符串中还原出一个格式化的数据
+//sprintf - 把格式化的数据存放在一个字符串中
+//struct S
+//{
+//	char name[20];
+//	int age;
+//	float score;
+//};
+//
+//int main()
+//{
+//	struct S s = {"zhangsan", 20, 98.5};
+//	char buf[100] = { 0 };
+//	sprintf(buf, "%s %d %f", s.name, s.age, s.score);
+//	printf("%s\n", buf);//按照字符串打印的
+//
+//	struct S tmp = { 0 };
+//	sscanf(buf, "%s %d %f", tmp.name, &(tmp.age), &(tmp.score));
+//	printf("%s %d %f\n", tmp.name, tmp.age, tmp.score);//打印结构体数据
+//
+//	return 0;
+//}
+
