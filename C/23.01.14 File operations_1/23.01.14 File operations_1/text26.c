@@ -288,3 +288,37 @@
 //	return 0;
 //}
 
+
+
+//文件的随机读写
+//int main()
+//{
+//	FILE*pf = fopen("test.txt", "r");
+//	if (pf == NULL)
+//	{
+//		perror("fopen");
+//	}
+//	else
+//	{
+//		int ch = fgetc(pf);
+//		printf("%c\n", ch);//a
+//		ch = fgetc(pf);
+//		printf("%c\n", ch);//b
+//		ch = fgetc(pf);
+//		printf("%c\n", ch);//c
+//
+//		//如果继续往下读，必然是d
+//		//但是我们调整一下，去读取：b
+//		//fseek(pf, -2, SEEK_CUR);
+//		fseek(pf, 1, SEEK_SET);
+//		ch = fgetc(pf);
+//		printf("%c\n", ch);//b
+//		printf("%d\n", ftell(pf));//计算偏移量
+//		rewind(pf);//将文件指针恢复到起始位置
+//		ch = fgetc(pf);
+//		printf("%c\n", ch);//a
+//	}
+//
+//	return 0;
+//}
+
