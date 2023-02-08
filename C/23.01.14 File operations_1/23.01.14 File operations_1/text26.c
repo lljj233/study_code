@@ -208,3 +208,57 @@
 //	return 0;
 //}
 
+
+
+//二进制的输入和输出
+
+//fwrite
+//struct S
+//{
+//	char name[20];
+//	int age;
+//	float score;
+//};
+//int main()
+//{
+//	struct S s = { "zhangsan", 20, 95.5 };
+//	FILE* pf = fopen("test.txt", "wb");
+//	if (NULL == pf)
+//	{
+//		perror("fopen");
+//		return 1;
+//	}
+//	//以二进制的方式写文件
+//	fwrite(&s, sizeof(struct S), 1, pf);
+//	
+//	//关闭文件
+//	fclose(pf);
+//	pf = NULL;
+//	return 0;
+//}
+
+//fread
+//struct S
+//{
+//	char name[20];
+//	int age;
+//	float score;
+//};
+//int main()
+//{
+//	struct S s = { "zhangsan", 20, 95.5 };
+//	FILE* pf = fopen("test.txt", "rb");
+//	if (NULL == pf)
+//	{
+//		perror("fopen");
+//		return 1;
+//	}
+//	//以二进制的方式读文件
+//	fread(&s, sizeof(struct S), 1, pf);
+//	printf("%s %d %f", s.name, s.age, s.score);
+//	//关闭文件
+//	fclose(pf);
+//	pf = NULL;
+//	return 0;
+//}
+
