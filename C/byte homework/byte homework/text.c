@@ -2024,3 +2024,24 @@
 //	return 0;
 //}
 
+
+
+//写一个宏，计算结构体中某变量相对于首地址的偏移，并给出说明
+//offsetof宏的实现
+//#include<stdio.h>
+//#include<stddef.h>
+//struct S
+//{
+//	char c1;
+//	int i;
+//	char c2;
+//};
+//#define OFFSETOF(type,member)   (size_t)&(((type*)0)->member)
+//int main()
+//{
+//	printf("%d\n", OFFSETOF(struct S, c1));
+//	printf("%d\n", OFFSETOF(struct S, i));
+//	printf("%d\n", OFFSETOF(struct S, c2));
+//	return 0;
+//}
+
