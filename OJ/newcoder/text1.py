@@ -29,4 +29,6 @@ print(k)
 x="dshGJK2343"
 print(x.upper())# 把x里的小写字母变成大写字母
 print(x.lower())# 把x里的大写字母变成小写字母
-print(len(x))
+print(len(x))# 求出x内容里字符的个数
+
+
