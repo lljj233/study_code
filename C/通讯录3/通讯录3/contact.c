@@ -49,11 +49,6 @@ void Add_Contact(Contact* pc)
 {
 	assert(pc);
 	check_capacity(pc);
-	if (pc->size == pc->cacpcity)
-	{
-		printf("通讯录已满，无法添加");
-		return;
-	}
 	//增加一个联系人的信息
 	printf("请输入姓名：");
 	scanf("%s", pc->data[pc->size].name);
@@ -177,7 +172,15 @@ void Modify_Contact(Contact* pc)
 void Clear_Contact(Contact* pc)
 {
 	assert(pc);
-	Init_Contact(pc);
+	pc->size = 0;
+	Peoinfo* ptr = (Peoinfo*)calloc(DEFAULT_SIZE, sizeof(Peoinfo));
+	if (ptr == NULL)
+	{
+		perror("InitContact::calloc");
+		return;
+	}
+	pc->data = ptr;
+	pc->cacpcity = DEFAULT_SIZE;
 	printf("已清空所有联系人\n");
 }
 
