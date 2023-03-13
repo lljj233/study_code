@@ -1189,3 +1189,24 @@
 //
 //	return 0;
 //}
+
+
+
+//#include<stdio.h>
+//void F1()
+//{
+//	int a = 0;
+//	printf("%p\n", &a);
+//}
+//void F2()
+//{
+//	int b = 0;
+//	printf("%p\n", &b);
+//}
+//int main()
+//{
+//	F1();
+//	F2();
+//	return 0;
+//}
+
