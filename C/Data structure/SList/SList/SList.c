@@ -11,6 +11,7 @@ void SListPrint(SLTNode* phead)
 		cur = cur->next;
 	}
 	printf("NULL");
+	printf("\n");
 }
 SLTNode* BuySLTNode(SLTDataType x)
 {
@@ -27,6 +28,7 @@ SLTNode* BuySLTNode(SLTDataType x)
 }
 void SListPushBack(SLTNode** pphead, SLTDataType x)
 {
+	assert(pphead);
 	SLTNode* newnode = BuySLTNode(x);
 	if (*pphead == NULL)
 	{
@@ -46,6 +48,7 @@ void SListPushBack(SLTNode** pphead, SLTDataType x)
 }
 void SListPushFront(SLTNode** pphead, SLTDataType x)
 {
+	assert(pphead);
 	SLTNode* newnode = BuySLTNode(x);
 	newnode->next = *pphead;
 	*pphead = newnode;
@@ -55,6 +58,7 @@ void SListPopBack(SLTNode** pphead)
 	//链表本身为空的情况
 	/*if (*pphead == NULL)
 		return;*/
+	assert(pphead);
 	assert(*pphead);
 	//只有一个节点的情况
 	if ((*pphead)->next == NULL)
@@ -80,10 +84,81 @@ void SListPopBack(SLTNode** pphead)
 }
 void SListPopFront(SLTNode** pphead)
 {
+	assert(pphead);
 	assert(*pphead);
 	SLTNode* first = *pphead;
 	*pphead = first->next;
 	free(first);
 	first = NULL;
 }
-
+SLTNode* SListFind(SLTNode* phead, SLTDataType x)
+{
+	SLTNode* cur = phead;
+	while (cur)
+	{
+		if (cur->data == x)
+		{
+			return cur;
+		}
+		cur = cur->next;
+	}
+	return NULL;
+}
+void SListInsert(SLTNode** pphead, SLTNode* pos, SLTDataType x)
+{
+	assert(pos);
+	assert(pphead);
+	if (pos == *pphead)
+	{
+		SListPushFront(pphead, x);
+	}
+	else
+	{
+		//找到pos的前一个位置
+		SLTNode* prev = *pphead;
+		while (prev->next != pos)
+		{
+			prev = prev->next;
+		}
+		SLTNode* newnode = BuySLTNode(x);
+		prev->next = newnode;
+		newnode->next = pos;
+	}
+}
+void SListErase(SLTNode** pphead, SLTNode* pos)
+{
+	assert(pphead);
+	assert(pos);
+	//assert(*pphead);
+	if (*pphead == pos)
+	{
+		SListPopFront(pphead);
+	}
+	else
+	{
+		//找到pos的前一个位置
+		SLTNode* prev = *pphead;
+		while (prev->next != pos)
+		{
+			prev = prev->next;
+		}
+		prev->next = pos->next;
+		free(pos);
+	}
+}
+void SListInsertAfter(SLTNode* pos, SLTDataType x)
+{
+	assert(pos);
+	SLTNode* newnode = BuySLTNode(x);
+	newnode->next=pos->next;
+	pos->next = newnode;
+}
+void SListEraseAfter(SLTNode* pos)
+{
+	assert(pos);
+	assert(pos->next);
+	SLTNode* del = pos->next;
+	pos->next = del->next;
+	free(del);
+	del = NULL;
+}
