@@ -74,7 +74,22 @@
 //	SListPrint(plist);
 //}
 
-void TestSList7()
+//void TestSList7()
+//{
+//	SLTNode* plist = NULL;
+//	SListPushBack(&plist, 1);
+//	SListPushBack(&plist, 2);
+//	SListPushBack(&plist, 3);
+//	SListPushBack(&plist, 4);
+//	SListPrint(plist);
+//	SLTDataType* ret = SListFind(plist, 2);
+//	SListInsertAfter(ret, 5);
+//	SListPrint(plist);
+//	SListEraseAfter(ret);
+//	SListPrint(plist);
+//}
+
+void TestSList8()
 {
 	SLTNode* plist = NULL;
 	SListPushBack(&plist, 1);
@@ -82,10 +97,8 @@ void TestSList7()
 	SListPushBack(&plist, 3);
 	SListPushBack(&plist, 4);
 	SListPrint(plist);
-	SLTDataType* ret = SListFind(plist, 2);
-	SListInsertAfter(ret, 5);
-	SListPrint(plist);
-	SListEraseAfter(ret);
+	SListDestroy(plist);
+	plist = NULL;
 	SListPrint(plist);
 }
 
@@ -97,7 +110,8 @@ int main()
 	//TestSList4();
 	//TestSList5();
 	//TestSList6();
-	TestSList7();
+	//TestSList7();
+	TestSList8();
 	return 0;
 }
 

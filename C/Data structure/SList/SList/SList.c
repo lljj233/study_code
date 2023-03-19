@@ -162,3 +162,14 @@ void SListEraseAfter(SLTNode* pos)
 	free(del);
 	del = NULL;
 }
+void SListDestroy(SLTNode* phead)
+{
+	SLTNode* cur = phead;
+	while (cur)
+	{
+		SLTNode* next = cur->next;
+		free(cur);
+		cur = next;
+	}
+}
+

@@ -28,3 +28,6 @@ void SListErase(SLTNode** pphead, SLTNode* pos);
 void SListInsertAfter(SLTNode* pos, SLTDataType x);
 //posŒª÷√∫Û√Ê…æ≥˝
 void SListEraseAfter(SLTNode* pos);
+
+void SListDestroy(SLTNode* phead);
+
