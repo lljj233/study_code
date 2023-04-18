@@ -76,3 +76,42 @@
 //}
 
 
+
+//命名空间的使用有三种方式：
+//namespace N
+//{
+//	int a = 0;
+//	int b = 0;
+//	int Add(int x, int y)
+//	{
+//		return x + y;
+//	}
+//}
+//
+////1.加命名空间名称及作用域限定符
+//int main()
+//{
+//	printf("%d\n", N::a);
+//	return 0;
+//}
+//
+//
+////2.使用using将命名空间中某个成员引入
+//using N::b;
+//int main()
+//{
+//	printf("%d\n", N::a);
+//	printf("%d\n", b);
+//	return 0;
+//}
+//
+//
+////3.使用using namespace 命名空间名称引入
+//using namespace N;
+//int main()
+//{
+//	printf("%d\n", N::a);
+//	printf("%d\n", b);
+//	Add(10, 20);
+//	return 0;
+//}
