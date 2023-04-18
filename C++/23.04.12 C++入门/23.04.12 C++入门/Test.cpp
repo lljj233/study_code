@@ -115,3 +115,36 @@
 //	Add(10, 20);
 //	return 0;
 //}
+
+
+
+//#include<iostream>
+//using std::cout;
+//using std::endl;
+//using std::cin;
+//
+//int main()
+//{
+//	int x = 0;
+//	double y = 3.14;
+//
+//	//流插入运算符
+//	cout << "abc" << endl;
+//	cout << "abc" << "def" << endl;
+//	cout << "abc" << "def" << x << endl;
+//	cout << y << endl;//自动识别类型
+//	return 0;
+//}
+
+//int main()
+//{
+//	int x = 0;
+//	double y = 0;
+//
+//	//流提取运算符
+//	cin >> x >> y;
+//	cout << x << " " << y << endl;//y的精度丢失
+//	return 0;
+//}
+
+
