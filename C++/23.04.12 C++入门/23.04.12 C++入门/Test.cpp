@@ -204,3 +204,60 @@
 //2. 缺省参数不能在函数声明和定义中同时出现(声明给，定义不给)
 //3. 缺省值必须是常量或者全局变量
 //4. C语言不支持（编译器不支持）
+
+
+
+//函数重载
+//是函数的一种特殊情况，C++允许在同一作用域中声明几个功能类似的同名函数,
+//这些同名函数的形参列表(参数个数 或 类型 或 类型顺序)不同，常用来处理实现功能类似数据类型不同的问题。
+//对返回值没有要求
+
+//#include<iostream>
+//using namespace std;
+//
+//// 1、参数类型不同
+//int Add(int left, int right)
+//{
+//	cout << "int Add(int left, int right)" << endl;
+//	return left + right;
+//}
+//double Add(double left, double right)
+//{
+//	cout << "double Add(double left, double right)" << endl;
+//	return left + right;
+//}
+//
+//
+//// 2、参数个数不同
+//void f()
+//{
+//	cout << "f()" << endl;
+//}
+//void f(int a)
+//{
+// cout << "f(int a)" << endl;
+//}
+//
+//
+//// 3、参数类型顺序不同
+//void f(int a, char b)
+//{
+//	cout << "f(int a,char b)" << endl;
+//}
+//void f(char b, int a)
+//{
+//	cout << "f(char b, int a)" << endl;
+//}
+//int main()
+//{
+//	Add(10, 20);
+//	Add(10.1, 20.2);
+//	f();
+//	f(10);
+//	f(10, 'a');
+//	f('a', 10);
+//	return 0;
+//}
+
+//无参调用可能存在歧义
+
