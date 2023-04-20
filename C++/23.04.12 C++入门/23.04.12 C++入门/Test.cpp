@@ -314,3 +314,25 @@
 //	return 0;
 //}
 
+
+
+//#include<iostream>
+//using namespace std;
+//void swap(int*& a, int*& b)
+//{
+//	int* tmp = a;
+//	a = b;
+//	b = tmp;
+//}
+//int main()
+//{
+//	int x = 1, y = 0;
+//	int* px = &x, * py = &y;
+//	cout << px << endl;
+//	cout << py << endl;
+//	swap(px, py);
+//	cout << px << endl;
+//	cout << py << endl;
+//	return 0;
+//}
+
