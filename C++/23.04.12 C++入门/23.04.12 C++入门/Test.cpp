@@ -266,8 +266,8 @@
 //引用
 //引用不是新定义一个变量，而是给已存在变量取了一个别名，编译器不会为引用变量开辟内存空间，它和它引用的变量共用同一块内存空间。
 //语法：类型& 引用变量名(对象名) = 引用实体；（引用类型必须和引用实体是同种类型的）
-#include<iostream>
-using namespace std;
+//#include<iostream>
+//using namespace std;
 
 //int main()
 //{
@@ -296,4 +296,21 @@ using namespace std;
 //1. 引用在定义时必须初始化
 //2. 一个变量可以有多个引用
 //3. 引用一旦引用一个实体，再不能引用其他实体
+
+
+
+//void swap(int& a, int& b)
+//{
+//	int tmp = a;
+//	a = b;
+//	b = tmp;
+//}
+//int main()
+//{
+//	int x = 1, y = 0;
+//	swap(x, y);
+//	cout << x << endl;
+//	cout << y << endl;
+//	return 0;
+//}
 
