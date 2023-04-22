@@ -376,6 +376,62 @@
 
 
 
+//常引用
+//#include<iostream>
+//using namespace std;
+
+//int main()
+//{
+//	const int a = 0;
+//	//int& b = a; 错误，a不能改变，引用的权限不能放大
+//
+//	const int c = 0;
+//	int d = c;//c拷贝给d，d不影响a
+//
+//	int x = 0;
+//	int& y = x;
+//	const int& z = x;//正确，引用过程中权限可以平移或缩小
+//	++x;//正确，作为x和y时可以修改
+//	//++z; 错误，作为z时不能修改
+//	cout << z << endl;
+//
+//	const int& m = 10;//正确，相当于为常量区别名
+//
+//	double dd = 1.11;
+//	int ii = dd;
+//	//发生类型转换时，都会产生临时变量，临时变量具有常性
+//	//int& rii = dd; 错误
+//	const int& rii = dd;//正确
+//
+//	return 0;
+//}
+
+//临时变量具有常性的例子
+//int func1()
+//{
+//	static int x = 0;
+//	return x;
+//}
+//int& func2()
+//{
+//	static int x = 0;
+//	return x;
+//}
+//int main()
+//{
+//	//int& ret1 = func1(); 错误，权限放大
+//	//int ret = func1();//正确，拷贝
+//	const int& ret1 = func1();//正确，权限平移
+//
+//	int& ret2 = func2();//正确，权限平移
+//	const int& ret3 = func2();//正确，权限缩小
+//
+//	return 0;
+//}
+
+
+
+
 //引用做返回值
 //返回时不生成临时变量（减少拷贝，提高效率）
 //使用场景
