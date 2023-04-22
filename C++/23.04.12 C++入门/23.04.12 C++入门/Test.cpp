@@ -336,3 +336,41 @@
 //	return 0;
 //}
 
+
+
+
+//传值、传引用效率比较
+//以值作为参数或者返回值类型，在传参和返回期间，函数不会直接传递实参或者将变量本身直
+//接返回，而是传递实参或者返回变量的一份临时的拷贝，因此用值作为参数或者返回值类型，效
+//率是非常低下的，尤其是当参数或者返回值类型非常大时，效率就更低。
+
+//#include <time.h>
+//#include<iostream>
+//using namespace std;
+//
+//struct A { int a[10000]; };
+//void TestFunc1(A a) {}
+//void TestFunc2(A& a) {}
+//void TestRefAndValue()
+//{
+//	A a;
+//	// 以值作为函数参数
+//	size_t begin1 = clock();
+//	for (size_t i = 0; i < 10000; ++i)
+//		TestFunc1(a);
+//	size_t end1 = clock();
+//	// 以引用作为函数参数
+//	size_t begin2 = clock();
+//	for (size_t i = 0; i < 10000; ++i)
+//		TestFunc2(a);
+//	size_t end2 = clock();
+//	// 分别计算两个函数运行结束后的时间
+//	cout << "TestFunc1(A)-time:" << end1 - begin1 << endl;
+//	cout << "TestFunc2(A&)-time:" << end2 - begin2 << endl;
+//}
+//int main()
+//{
+//	TestRefAndValue();
+//	return 0;
+//}
+
