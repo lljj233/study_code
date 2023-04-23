@@ -485,3 +485,25 @@
 //8. 访问实体方式不同，指针需要显式解引用，引用编译器自己处理
 //9. 引用比指针使用起来相对更安全
 
+
+
+//auto
+//#include<vector>
+//#include<iostream>
+//using namespace std;
+//int main()
+//{
+//	int a = 1;
+//	auto b = a;
+//	auto c = 1 + 1.11;
+//
+//	cout << typeid(b).name() << endl;
+//	cout << typeid(c).name() << endl;
+//
+//	vector<int> v;
+//	//vector<int>::iterator it = v.begin();
+//	auto it = v.begin();
+//
+//	return 0;
+//}
+
