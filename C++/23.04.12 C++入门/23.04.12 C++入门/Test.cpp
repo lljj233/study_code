@@ -554,3 +554,32 @@
 //将函数规模较小(即函数不是很长，具体没有准确的说法，取决于编译器内部实现)、
 //不是递归、且频繁调用的函数采用inline修饰，否则编译器会忽略inline特性。
 //3. inline不建议声明和定义分离，分离会导致链接错误。因为inline被展开，就没有函数地址了，链接就会找不到。
+
+
+
+//指针空值nullptr
+//#include<iostream>
+//using namespace std;
+//void f(int)
+//{
+//	cout << "f(int)" << endl;
+//}
+//void f(int*)
+//{
+//	cout << "f(int*)" << endl;
+//}
+//int main()
+//{
+//	f(0);
+//	f(NULL);
+//	f((int*)NULL);
+//	f(nullptr);
+//	return 0;
+//}
+//程序本意是想通过f(NULL)调用指针版本的f(int*)函数，但是由于NULL被定义成0，因此与程序的初衷相悖。
+
+//注意：
+//1. 在使用nullptr表示指针空值时，不需要包含头文件，因为nullptr是C++11作为新关键字引入
+//2. 在C++11中，sizeof(nullptr) 与 sizeof((void*)0)所占的字节数相同。
+//3. 为了提高代码的健壮性，在后续表示指针空值时建议最好使用nullptr。
+
