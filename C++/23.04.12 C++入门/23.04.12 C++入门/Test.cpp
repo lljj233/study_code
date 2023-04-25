@@ -508,6 +508,31 @@
 //}
 
 
+//auto语法糖
+//#include<iostream>
+//using namespace std;
+//int main()
+//{
+//	int x = 10;
+//	auto a = &x;
+//	auto* b = &x;
+//	auto& c = x;
+//
+//	int arr[] = { 1,2,3 };
+//	for (auto& x : arr)
+//	{
+//		x++;
+//	}
+//	for (auto& x : arr)
+//	{
+//		cout << x << endl;
+//	}
+//
+//	return 0;
+//}
+
+
+
 
 //内联函数
 //以inline修饰的函数叫做内联函数，编译时C++编译器会在调用内联函数的地方展开，
