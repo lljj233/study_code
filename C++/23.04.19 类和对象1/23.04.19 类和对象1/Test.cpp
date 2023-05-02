@@ -113,3 +113,57 @@
 //2.类声明放在.h文件中，成员函数定义放在.cpp文件中，注意：成员函数名前需要加类名::
 //一般用第二种好一些
 
+
+
+//计算类对象的大小
+#include<iostream>
+using namespace std;
+//class A
+//{
+//public:
+//	void PrintA()
+//	{
+//		cout << _a << endl;
+//	}
+//private:
+//	char _a;
+//};
+//int main()
+//{
+//	A a;
+//	cout << sizeof(a) << endl;
+//	cout << sizeof(A) << endl;
+//	//算成员变量，不算成员函数
+//	return 0;
+//}
+
+
+
+//类对象的存储
+//类中既有成员变量，又有成员函数
+//class A1 
+//{
+//public:
+//	void f1() {}
+//private:
+//	int _a;
+//};
+//// 类中仅有成员函数
+//class A2 
+//{
+//public:
+//	void f2() {}
+//};
+//// 类中什么都没有---空类
+////空类比较特殊，编译器给了空类一个字节来唯一标识这个类的对象
+//class A3
+//{};
+//int main()
+//{
+//	cout << sizeof(A1) << endl;
+//	cout << sizeof(A2) << endl;
+//	cout << sizeof(A3) << endl;
+//	return 0;
+//}
+//一个类的大小，实际就是该类中”成员变量”之和，当然要注意内存对齐
+
