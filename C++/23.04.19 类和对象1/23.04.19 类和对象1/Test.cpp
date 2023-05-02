@@ -167,3 +167,43 @@ using namespace std;
 //}
 //一个类的大小，实际就是该类中”成员变量”之和，当然要注意内存对齐
 
+
+
+//this指针
+//class Date
+//{
+//public:
+//	void Init(int year, int month, int day)
+//	{
+//		_year = year;
+//		_month = month;
+//		_day = day;
+//	}
+//	void Print()
+//	{
+//		cout << _year << "-" << _month << "-" << _day << endl;
+//	}
+//	//C++编译器给每个“非静态的成员函数“增加了一个隐藏的指针参数，让该指针指向当前对象(函数运行时调用该函数的对象)，
+//	//在函数体中所有“成员变量”的操作，都是通过该指针去访问。
+//	//只不过所有的操作对用户是透明的，即用户不需要来传递，编译器自动完成。
+//	/*void Print(Date* this)
+//	{
+//		cout << this->_year << "-" << this->_month << "-" << this->_day << endl;
+//		//this不能在形参和实参显示传递，但是可以在函数内部使用
+//	}*/
+//
+//private:
+//	int _year;		// 年
+//	int _month;		// 月
+//	int _day;		// 日
+//};
+//int main()
+//{
+//	Date d1, d2;
+//	d1.Init(2022, 1, 11);
+//	d2.Init(2022, 1, 12);
+//	d1.Print();
+//	d2.Print();
+//	return 0;
+//}
+
