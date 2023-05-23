@@ -114,3 +114,66 @@
 //	return 0;
 //}
 
+
+//函数运算符重载
+//#include<iostream>
+//using namespace std;
+//class Date
+//{
+//public:
+//	Date(int year = 1900, int month = 1, int day = 1)
+//	{
+//		_year = year;
+//		_month = month;
+//		_day = day;
+//	}
+//	void Print()
+//	{
+//		cout << _year << "-" << _month << "-" << _day << endl;
+//	}
+//	bool operator<(const Date& x)
+//	{
+//		if (_year < x._year)
+//			return true;
+//		else if (_year == x._year && _month < x._month)
+//			return true;
+//		else if (_year == x._year && _month == x._month && _day < x._day)
+//			return true;
+//		return false;
+//	}
+//	Date operator=(const Date& x)
+//	{
+//		_year = x._year;
+//		_month = x._month;
+//		_day = x._day;
+//		return *this;
+//	}
+//private:
+//	int _year;
+//	int _month;
+//	int _day;
+//};
+////bool operator<(const Date& x1, const Date& x2)
+////{
+////	if (x1._year < x2._year)
+////		return true;
+////	else if (x1._year == x2._year && x1._month < x2._month)
+////		return true;
+////	else if (x1._year == x2._year && x1._month == x2._month && x1._day < x2._day)
+////		return true;
+////	return false;
+////}
+//int main()
+//{
+//	Date d1(2003, 7, 3);
+//	Date d2(2023, 5, 1);
+//	d1 < d2;//会转换成d1.operator<(d2);
+//	return 0;
+//}
+//注意：
+//1. 不能通过连接其他符号来创建新的操作符：比如operator@
+//2. 重载操作符必须有一个类类型参数
+//3. 用于内置类型的运算符，其含义不能改变，例如：内置的整型 + ，不 能改变其含义
+//4. 作为类成员函数重载时，其形参看起来比操作数数目少1，因为成员函数的第一个参数为隐藏的this
+//5. .* :: sizeof ? : .注意以上5个运算符不能重载。这个经常在笔试选择题中出现。
+
