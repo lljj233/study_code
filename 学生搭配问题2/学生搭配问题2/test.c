@@ -1,6 +1,27 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include"sc.h"
 
+void menu()
+{
+	printf("*****  1. 查询  *****\n");
+	printf("*****  2. 退出  *****\n");
+}
+
+void show(int i, int n, int m, ST* man, Queue* women, int arr_man[], int arr_women[])
+{
+	int ret1 = STTop(man) % n;
+	int ret2 = QueueFront(women) % m;
+	if (ret1 == 0)
+		ret1 = n;
+	if (ret2 == 0)
+		ret2 = m;
+	printf("第%d曲：跳舞的男生编号为%d，女生的编号为%d\n", i + 1, ret1, ret2);
+	arr_man[i] = STTop(man);
+	arr_women[i] = QueueFront(women);
+	STPop(man);
+	QueuePop(women);
+}
+
 int main()
 {
 	ST man;
@@ -10,14 +31,11 @@ int main()
 	QueueInit(&women);
 
 	int m = 0, n = 0;//定义女生人数和男生人数
-	int man_num = 0, women_num = 0, music_num = 0;
 	int music = 0;//定义歌曲曲目
 	int arr_man[100] = { 0 };
 	int arr_women[100] = { 0 };
 	printf("请输入音乐数目：");
 	scanf("%d", &music);
-	int music_same = music;
-	music = 1;
 	printf("请输入女生人数：");
 	scanf("%d", &m);
 	printf("请输入男生人数：");
@@ -33,149 +51,79 @@ int main()
 	}
 	int min = m > n ? n : m;
 	int max = m > n ? m : n;
-	if (music_same <= min)
+	if (music <= max)
 	{
-		for (int i = 0; i < music_same; i++)
+		for (int i = 0; i < music; i++)
 		{
-			printf("第%d曲：第%d个男生和第%d个女生配对\n", i + 1, STTop(&man), QueueFront(&women));
-			arr_man[i] = STTop(&man);
-			arr_women[i] = QueueFront(&women);
-			QueuePop(&women);
-			STPop(&man);
-		}
-	}
-	else if (music_same > min && music_same < max)
-	{
-		for (int i = 0; i < min; i++)
-		{
-			printf("第%d曲：第%d个男生和第%d个女生配对\n", music, STTop(&man), QueueFront(&women));
-			arr_man[i] = STTop(&man);
-			arr_women[i] = QueueFront(&women);
-			QueuePop(&women);
-			STPop(&man);
-			if (QueueEmpty(&women))
-			{
-				for (int j = 0; j < max - min; j++)
-				{
-					QueuePush(&women, j + 1);
-				}
-			}
+			show(i, n, m, &man, &women, arr_man, arr_women);
 			if (STEmpty(&man))
 			{
-				for (int j = 0; j < max - min; j++)
+				for (int j = 0; j < music - min; j++)
 				{
 					STPush(&man, j + 1);
 				}
 			}
-			music++;
-		}
-		while ((!STEmpty(&man)) && (!QueueEmpty(&women)))
-		{
-			for (int i = 0; i < max - min; i++)
+			if (QueueEmpty(&women))
 			{
-				if (min == music_same)
-					break;
-				if (m > n)
+				for (int j = 0; j < music - min; j++)
 				{
-					int ret = STTop(&man) % n;
-					if (STTop(&man) % n == 0)
-						ret = n;
-					printf("第%d曲：第%d个男生和第%d个女生配对\n", music, ret, QueueFront(&women));
-					arr_man[min + i] = STTop(&man);
-					arr_women[min + i] = QueueFront(&women);
-					QueuePop(&women);
-					STPop(&man);
-					min++;
+					QueuePush(&women, j + 1);
 				}
-				else
-				{
-					int ret = QueueFront(&women) % m;
-					if (QueueFront(&women) % m == 0)
-						ret = m;
-					printf("第%d曲：第%d个男生和第%d个女生配对\n", music, STTop(&man), ret);
-					arr_man[min + i] = STTop(&man);
-					arr_women[min + i] = QueueFront(&women);
-					QueuePop(&women);
-					STPop(&man);
-					min++;
-				}
-				music++;
 			}
-			break;
+			if (STEmpty(&man) && QueueEmpty(&women))
+				break;
 		}
 	}
 	else
 	{
-		for (int i = 0; i < min; i++)
+		for (int i = 0; i < music - m; i++)
 		{
-			printf("第%d曲：第%d个男生和第%d个女生配对\n", music, STTop(&man), QueueFront(&women));
-			arr_man[i] = STTop(&man);
-			arr_women[i] = QueueFront(&women);
-			STPop(&man);
-			QueuePop(&women);
-			if (QueueEmpty(&women))
-			{
-				for (int j = 0; j < max - min; j++)
-				{
-					QueuePush(&women, j + 1);
-				}
-			}
-			if (STEmpty(&man))
-			{
-				for (int j = 0; j < max - min; j++)
-				{
-					STPush(&man, j + 1);
-				}
-			}
-			music++;
+			QueuePush(&women, i + 1);
 		}
-		while ((!QueueEmpty(&women)) && (!STEmpty(&man)))
+		for (int i = 0; i < music - n; i++)
 		{
-			for (int i = 0; i < max - min; i++)
-			{
-				if (m > n)
-				{
-					int ret = STTop(&man) % n;
-					if (STTop(&man) % n == 0)
-						ret = n;
-					printf("第%d曲：第%d个男生和第%d个女生配对\n", music, ret, QueueFront(&women));
-					arr_man[min + i] = STTop(&man);
-					arr_women[min + i] = QueueFront(&women);
-					QueuePop(&women);
-					STPop(&man);
-				}
-				else
-				{
-					int ret = QueueFront(&women) % m;
-					if (QueueFront(&women) % m == 0)
-						ret = m;
-					printf("第%d曲：第%d个男生和第%d个女生配对\n", music, STTop(&man), ret);
-					arr_man[min + i] = STTop(&man);
-					arr_women[min + i] = QueueFront(&women);
-					QueuePop(&women);
-					STPop(&man);
-				}
-				music++;
-			}
+			STPush(&man, i + 1);
+		}
+		for (int i = 0; i < music; i++)
+		{
+			show(i, n, m, &man, &women, arr_man, arr_women);
 		}
 	}
 
-	printf("请输入要查询的曲目：");
-	scanf("%d", &music_num);
-	if (m > n)
+
+	int music_num = 0;
+	int input = 0;
+	do
 	{
-		int ret = arr_man[music_num - 1] % n;
-		if (ret == 0)
-			ret = n;
-		printf("第%d曲中，男生的编号为%d，女生编号为%d\n", music_num,ret, arr_women[music_num - 1]);
-	}
-	else
-	{
-		int ret = arr_women[music_num - 1] % m;
-		if (ret == 0)
-			ret = m;
-		printf("第%d曲中，男生的编号为%d，女生编号为%d\n", music_num, arr_man[music_num - 1] % n, ret);
-	}
+		menu();
+		printf("请输入选项\n");
+		scanf("%d", &input);
+		switch (input)
+		{
+		case 1:
+			printf("请输入要查询的曲目：\n");
+			scanf("%d", &music_num);
+			int ret1 = arr_man[music_num - 1] % n;
+			int ret2 = arr_women[music_num - 1] % m;
+			if (ret1 == 0)
+				ret1 = n;
+			if (ret2 == 0)
+				ret2 = m;
+			printf("第%d曲中，男生的编号为%d，女生编号为%d\n", music_num, ret1, ret2);
+			printf("按下任意键后清空\n");
+			system("pause");
+			system("cls");
+			break;
+		case 2:
+			printf("按下任意键后退出\n");
+			system("pause");
+			exit(-1);
+			break;
+		default:
+			printf("输入错误，请重新输入\n");
+			break;
+		}
+	} while (input);
 
 	STDestroy(&man);
 	QueueDestroy(&women);
