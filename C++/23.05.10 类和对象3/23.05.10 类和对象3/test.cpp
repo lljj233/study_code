@@ -29,3 +29,52 @@
 //	return 0;
 //}
 
+
+
+//匿名对象
+//#include<iostream>
+//using namespace std;
+//
+//class A
+//{
+//public:
+//	A(int a = 0)
+//		:_a(a)
+//	{
+//		cout << "A(int a)" << endl;
+//	}
+//	~A()
+//	{
+//		cout << "~A()" << endl;
+//	}
+//private:
+//	int _a;
+//};
+//
+//class Solution
+//{
+//public:
+//	int Sum_Solution(int n)
+//	{
+//		//...
+//		return n;
+//	}
+//};
+//
+//int main()
+//{
+//	A aa(1);//有名对象--生命周期在当前函数局部域
+//	A(2);   //匿名对象--生命周期在当前行
+//
+//	Solution s1;
+//	s1.Sum_Solution(20);
+//
+//	Solution().Sum_Solution(20);
+// 
+//  //A& ra = A(1);//错误，匿名对象具有常性
+//  const A& ra = A(1);//正确，const引用延长了匿名对象的生命周期，生命周期在当前函数局部域
+// 
+//  Solution().Sum_Solution(20);
+//	return 0;
+//}
+
