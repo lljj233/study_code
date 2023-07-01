@@ -116,3 +116,57 @@ using namespace std;
 //	return 0;
 //}
 
+
+
+//类模板的声明和定义
+//template<class T>
+//class Stack
+//{
+//public:
+//	Stack(size_t capacity = 3);//构造函数声明和定义分离
+//
+//	void push(const T& data)
+//	{
+//		_array[_size] = data;
+//		_size++;
+//	}
+//	//其他...
+//
+//	~Stack()
+//	{
+//		if (_array)
+//		{
+//			free(_array);
+//			_array = NULL;
+//			_capacity = 0;
+//			_size = 0;
+//		}
+//	}
+//private:
+//	T* _array;
+//	int _capacity;
+//	int _size;
+//};
+//template<class T>
+//Stack<T>::Stack(size_t capacity)
+//{
+//	_array = new T[capacity];
+//	_capacity = capacity;
+//	_size = 0;
+//}
+//
+////对于普通类来说，类名和类型是一样的
+//
+////对于类模板来说，类名和类型不一样
+////类名：Stack
+////类型：Stack<T>
+//
+//int main()
+//{
+//	Stack<int>s1;
+//	Stack<double>s2;
+//	Stack<char>s3;
+//
+//	return 0;
+//}
+
