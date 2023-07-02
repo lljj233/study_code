@@ -1,5 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include<iostream>
+#include<vector>
 #include<string>//管理字符数组（增删查改+算法）
 using namespace std;
 
@@ -74,6 +75,44 @@ using namespace std;
 //	char s3[] = "hello world";
 //	s3[1];// 底层为*(s3+1)
 //	s1[1];// 底层为s1.operator[](1)
+//
+//	return 0;
+//}
+
+
+
+//迭代器
+//iterator是像指针一样的类型，可能是指针
+//int main()
+//{
+//	string s1 = "hello world";
+//	string::iterator it = s1.begin();
+//	while (it != s1.end())
+//	{
+//		//写
+//		(*it)--;
+//		++it;
+//	}
+//	it = s1.begin();
+//	while (it != s1.end())
+//	{
+//		//读
+//		cout << *it << " ";
+//		++it;
+//	}
+//	cout << endl;
+//
+//	//范围for
+//	//底层替换为迭代器
+//	for (auto& ch : s1)
+//	{
+//		ch++;
+//	}
+//	for (auto ch : s1)
+//	{
+//		cout << ch << " ";
+//	}
+//	cout << endl;
 //
 //	return 0;
 //}
