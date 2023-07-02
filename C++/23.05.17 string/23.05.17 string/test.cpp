@@ -53,3 +53,28 @@ using namespace std;
 //	return 0;
 //}
 
+
+
+//int main()
+//{
+//	string s1 = "hello world";
+//	cout << s1.size() << endl;
+//	//修改
+//	for (size_t i = 0; i < s1.size(); i++)
+//	{
+//		s1[i]++;
+//	}
+//	//遍历string
+//	for (size_t i = 0; i < s1.size(); i++)
+//	{
+//		cout << s1[i];
+//	}
+//	cout << endl;
+//
+//	char s3[] = "hello world";
+//	s3[1];// 底层为*(s3+1)
+//	s1[1];// 底层为s1.operator[](1)
+//
+//	return 0;
+//}
+
