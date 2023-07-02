@@ -1,0 +1,55 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<iostream>
+#include<string>//管理字符数组（增删查改+算法）
+using namespace std;
+
+//int main()
+//{
+//	string s1;
+//	std::string s2;
+//
+//	std::string name("张三");
+//	name = "李四";
+//
+//	return 0;
+//}
+
+//int main()
+//{
+//	string s1;
+//	string s2("张三");
+//	string s3("hello,world");
+//	string s4(10, '*');
+//	string s5(s2);
+//	string s6(s3, 6, 5);
+//	string s7(s3, 6);
+//
+//	cout << s1 << endl;
+//	cout << s2 << endl;
+//	cout << s3 << endl;
+//	cout << s4 << endl;
+//	cout << s5 << endl;
+//	cout << s6 << endl;
+//	cout << s7 << endl;
+//
+//	cout << (s1 == s2) << endl;
+//	cout << (s1 < s2) << endl;
+//
+//	return 0;
+//}
+
+//int main()
+//{
+//	string s1 = "hello";
+//	s1.push_back(' ');//尾插一个字符
+//	s1.append("world");//尾插一个字符串
+//	cout << s1 << endl;
+//
+//	string s2 = "hello";
+//	s2 += ' ';
+//	s2 += "world";
+//	cout << s2 << endl;
+//
+//	return 0;
+//}
+
