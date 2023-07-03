@@ -1,6 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include<iostream>
-#include<vector>
 #include<string>//管理字符数组（增删查改+算法）
 using namespace std;
 
@@ -113,6 +112,54 @@ using namespace std;
 //		cout << ch << " ";
 //	}
 //	cout << endl;
+//
+//	return 0;
+//}
+
+
+
+//容器和链表
+//容器和链表都支持迭代器，并且用法类似
+//#include<vector>
+//#include<list>
+//int main()
+//{
+//	vector<int>v;
+//	v.push_back(1);
+//	v.push_back(2);
+//	v.push_back(3);
+//
+//	vector<int>::iterator it = v.begin();
+//	while (it != v.end())
+//	{
+//		cout << *it << " ";
+//		++it;
+//	}
+//	cout << endl;
+//
+//
+//	list<int>l;
+//	l.push_back(1);
+//	l.push_back(2);
+//	l.push_back(3);
+//
+//	list<int>::iterator itit = l.begin();
+//	while (itit != l.end())
+//	{
+//		cout << *itit << " ";
+//		++itit;
+//	}
+//	cout << endl;
+//
+//	//迭代器与容器相结合
+//	reverse(v.begin(), v.end());
+//	while (it != v.end())
+//	{
+//		cout << *it << " ";
+//		++it;
+//	}
+//	cout << endl;
+//	reverse(l.begin(), l.end());
 //
 //	return 0;
 //}
