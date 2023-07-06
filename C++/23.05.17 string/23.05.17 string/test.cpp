@@ -164,3 +164,31 @@ using namespace std;
 //	return 0;
 //}
 
+
+
+//string传参
+//void func(const string& s)
+//{
+//	string::const_iterator it = s.begin();//const常量要用const迭代器，只读不能写
+//	while (it != s.end())
+//	{
+//		//*it += 2;只读不写
+//		cout << *it << " ";
+//		++it;
+//	}
+//	cout << endl;
+//	string::const_reverse_iterator rit = s.rbegin();
+//	while (rit != s.rend())
+//	{
+//		cout << *rit << " ";
+//		++rit;
+//	}
+//	cout << endl;
+//}
+//int main()
+//{
+//	string s1 = "hello world";
+//	func(s1);
+//	return 0;
+//}
+
