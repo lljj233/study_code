@@ -30,6 +30,15 @@ void test2()
 	{
 		AdjustUp(&array, i);
 	}
+
+	/*int end = 10 - 1;
+	while (end > 0)
+	{
+		Swap(&array[0], &array[end]);
+		AdjustDown(&array, end, 0);
+		end--;
+	}*/
+
 	for (int i = 0; i < 10; i++)
 	{
 		Swap(&array[0], &array[9 - i]);
