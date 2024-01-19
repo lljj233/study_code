@@ -24,6 +24,7 @@ void test1()
 
 void test2()
 {
+	//向上调整建堆，时间复杂度为O（N*logN）
 	int array[10] = { 3,6,8,13,4,9,8,10,19,5 };//利用建堆插入的思想对数组进行排序
 	//排升序建大堆，排降序建小堆
 	for (int i = 1; i < 10; i++)
@@ -46,9 +47,27 @@ void test2()
 	}
 }
 
+void test3()
+{
+	//向下调整建堆，时间复杂度为O（N）
+	int array[10] = { 3,6,8,13,4,9,8,10,19,5 };
+	for (int i = (10 - 1 - 1) / 2; i >= 0; i--)
+	{
+		AdjustDown(&array, 10, i);
+	}
+	int end = 10 - 1;
+	while (end > 0)
+	{
+		Swap(&array[0], &array[end]);
+		AdjustDown(&array, end, 0);
+		end--;
+	}
+}
+
 int main()
 {
 	//test1();
-	test2();
+	//test2();
+	test3();
 	return 0;
 }
