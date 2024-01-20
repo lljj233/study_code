@@ -33,14 +33,15 @@ void AdjustUp(HPDataType* array, int child)
 	}
 }
 
+//前提是左右子树都是大堆/小堆
 void AdjustDown(HPDataType* array, int n, int parent)
 {
 	int child = parent * 2 + 1;
 	while (child < n)
 	{
-		if (child + 1 < n && array[child] < array[child + 1])
+		if (child + 1 < n && array[child] > array[child + 1])
 			child++;
-		if (array[child] > array[parent])
+		if (array[child] < array[parent])
 		{
 			Swap(&array[child], &array[parent]);
 			parent = child;
