@@ -97,6 +97,15 @@ int TreeSize(BTNode* root)
 	return root == NULL ? 0 : TreeSize(root->left) + TreeSize(root->right) + 1;
 }
 
+int TreeHeight(BTNode* root)
+{
+	if (root == NULL)
+		return 0;
+	int leftHeight = TreeHeight(root->left);
+	int rightHeight = TreeHeight(root->right);
+	return leftHeight > rightHeight ? leftHeight + 1 : rightHeight + 1;
+}
+
 int main()
 {
 	BTNode* root = CreateBinaryTree();
@@ -111,6 +120,6 @@ int main()
 	printf("TreeSize = %d\n", size);
 	size = 0;*/
 	printf("TreeSize = %d\n", TreeSize(root));
-
+	printf("TreeHeight = %d\n", TreeHeight(root));
 	return 0;
 }
