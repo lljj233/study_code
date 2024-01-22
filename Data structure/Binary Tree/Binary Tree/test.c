@@ -106,6 +106,19 @@ int TreeHeight(BTNode* root)
 	return leftHeight > rightHeight ? leftHeight + 1 : rightHeight + 1;
 }
 
+int TreeKLevel(BTNode* root, int k)
+{
+	//原理：当前树的第K层个数 = 左子树的第k-1层个数 + 右子树的第k-1层个数
+	assert(k > 0);
+	if (root==NULL)
+		return 0;
+	if (k == 1)
+		return 1;
+	int leftk = TreeKLevel(root->left, k - 1);
+	int rightk = TreeKLevel(root->right, k - 1);
+	return leftk + rightk;
+}
+
 int main()
 {
 	BTNode* root = CreateBinaryTree();
@@ -121,5 +134,6 @@ int main()
 	size = 0;*/
 	printf("TreeSize = %d\n", TreeSize(root));
 	printf("TreeHeight = %d\n", TreeHeight(root));
+	printf("TreeKLevel = %d\n", TreeKLevel(root,3));
 	return 0;
 }
