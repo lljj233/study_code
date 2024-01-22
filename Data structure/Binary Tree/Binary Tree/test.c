@@ -82,6 +82,16 @@ void PostOrder(BTNode* root)//后序遍历
 	printf("%d ", root->data);
 }
 
+//int size = 0;
+//void TreeSize(BTNode* root)//每次调用前都需要对全局变量进行初始化，否则全局变量累加容易出错
+//{
+//	if (root == NULL)
+//		return;
+//	size++;
+//	TreeSize(root->left);
+//	TreeSize(root->right);
+//}
+
 int main()
 {
 	BTNode* root = CreateBinaryTree();
@@ -91,5 +101,10 @@ int main()
 	printf("\n");
 	PostOrder(root);
 	printf("\n");
+
+	/*TreeSize(root);
+	printf("TreeSize = %d\n", size);
+	size = 0;*/
+		
 	return 0;
 }
