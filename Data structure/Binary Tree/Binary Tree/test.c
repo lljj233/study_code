@@ -92,6 +92,11 @@ void PostOrder(BTNode* root)//ºóÐò±éÀú
 //	TreeSize(root->right);
 //}
 
+int TreeSize(BTNode* root)
+{
+	return root == NULL ? 0 : TreeSize(root->left) + TreeSize(root->right) + 1;
+}
+
 int main()
 {
 	BTNode* root = CreateBinaryTree();
@@ -105,6 +110,7 @@ int main()
 	/*TreeSize(root);
 	printf("TreeSize = %d\n", size);
 	size = 0;*/
-		
+	printf("TreeSize = %d\n", TreeSize(root));
+
 	return 0;
 }
