@@ -119,6 +119,25 @@ int TreeKLevel(BTNode* root, int k)
 	return leftk + rightk;
 }
 
+//二叉树查找值为x的节点
+//有多个值则返回第一个
+BTNode* BinaryFind(BTNode* root, BTDataType x)
+{
+	if (root==NULL)
+		return NULL;
+	if (root->data == x)
+		return root;
+
+	BTNode* leftnode = BinaryFind(root->left, x);
+	if (leftnode != NULL)
+		return leftnode;
+	BTNode* rightnode = BinaryFind(root->right, x);
+	if (rightnode != NULL)
+		return rightnode;
+	
+	return NULL;
+}
+
 int main()
 {
 	BTNode* root = CreateBinaryTree();
@@ -135,5 +154,9 @@ int main()
 	printf("TreeSize = %d\n", TreeSize(root));
 	printf("TreeHeight = %d\n", TreeHeight(root));
 	printf("TreeKLevel = %d\n", TreeKLevel(root,3));
+
+	printf("BinaryFind = %p\n", BinaryFind(root, 3));
+	printf("BinaryFind = %p\n", BinaryFind(root, 30));
+
 	return 0;
 }
