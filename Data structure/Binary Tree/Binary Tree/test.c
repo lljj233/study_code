@@ -41,7 +41,7 @@ BTNode* CreateBinaryTree()
 	node1->right = node4;
 	node2->left = node3;
 	node4->left = node5;
-	node4->right = node6;
+	node2->right = node6;
 
 	return node1;
 }
@@ -158,8 +158,44 @@ void BinaryTreeLevelOrder(BTNode* root)
 		if (front->right)
 			QueuePush(&q, front->right);
 	}
+	printf("\n");
+	QueueDestroy(&q);
+}
+
+//判断二叉树是否是完全二叉树
+bool BinaryTreeComplete(BTNode* root)
+{
+	Queue q;
+	QueueInit(&q);
+	if (root)
+		QueuePush(&q, root);
+	while (!QueueEmpty(&q))
+	{
+		BTNode* front = QueueFront(&q);
+		QueuePop(&q);
+		if (front == NULL)
+			break;
+		else
+		{
+			QueuePush(&q, front->left);
+			QueuePush(&q, front->right);
+		}
+	}
+
+	//判断节点是否全为非空，是则为完全二叉树
+	while (!QueueEmpty(&q))
+	{
+		BTNode* front = QueueFront(&q);
+		QueuePop(&q);
+		if (front != NULL)
+		{
+			QueueDestroy(&q);
+			return false;
+		}
+	}
 
 	QueueDestroy(&q);
+	return true;
 }
 
 int main()
@@ -183,6 +219,8 @@ int main()
 	printf("BinaryFind = %p\n", BinaryFind(root, 30));
 
 	BinaryTreeLevelOrder(root);
+
+	printf("BinaryTreeComplete = %d\n", BinaryTreeComplete(root));
 
 	return 0;
 }
