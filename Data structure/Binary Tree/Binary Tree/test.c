@@ -46,6 +46,15 @@ BTNode* CreateBinaryTree()
 	return node1;
 }
 
+void BinaryTreeDestory(BTNode* root)
+{
+	if (root == NULL)
+		return;
+	BinaryTreeDestory(root->left);
+	BinaryTreeDestory(root->right);
+	free(root);
+}
+
 void PreOrder(BTNode* root)//Ç°Ðò±éÀú
 {
 	if (root == NULL)
@@ -221,6 +230,9 @@ int main()
 	BinaryTreeLevelOrder(root);
 
 	printf("BinaryTreeComplete = %d\n", BinaryTreeComplete(root));
+
+	BinaryTreeDestory(root);
+	root = NULL;
 
 	return 0;
 }
