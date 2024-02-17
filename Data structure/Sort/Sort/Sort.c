@@ -37,3 +37,50 @@ void InsertSort(int* a, int n)
 	
 }
 
+void ShellSort(int* a, int n)
+{
+	int gap = n;
+	while (gap > 1)
+	{
+		//gap > 1时是预排序
+		//gap = 1时是插入排序（不论gap怎么变化，最后gap一定要为1）
+		gap /= 2;
+		/*for (int j = 0; j < gap; j++)
+		{
+			for (int i = j; i < n - gap; i += gap)
+				{
+					int end = i;
+					int tmp = a[i + gap];
+					while (end >= 0)
+					{
+						if (tmp <= a[end])
+						{
+							a[end + gap] = a[end];
+							end -= gap;
+						}
+						else
+							break;
+					}
+					a[end + gap] = tmp;
+				}
+		}*/
+		for (int i = 0; i < n - gap; i++)
+		{
+			int end = i;
+			int tmp = a[i + gap];
+			while (end >= 0)
+			{
+				if (tmp < a[end])
+				{
+					a[end + gap] = a[end];
+					end -= gap;
+				}
+				else
+					break;
+			}
+			a[end + gap] = tmp;
+		}
+		PrintSort(a, n);
+	}
+}
+
