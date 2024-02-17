@@ -84,3 +84,34 @@ void ShellSort(int* a, int n)
 	}
 }
 
+void swap(int* p1, int* p2)
+{
+	int tmp = *p1;
+	*p1 = *p2;
+	*p2 = tmp;
+}
+//×îºÃ£ºO(N^2)
+//×î»µ£ºO(N^2)
+void SelectSort(int* a, int n)
+{
+	int left = 0, right = n - 1;
+	while (left < right)
+	{
+		int mini = left, maxi = left;
+		for (int i = left + 1; i <= right; i++)
+		{
+			if (a[i] < a[mini])
+				mini = i;
+			if (a[i] > a[maxi])
+				maxi = i;
+		}
+		swap(&a[left], &a[mini]);
+		if (left == maxi)
+			maxi = mini;
+		swap(&a[right], &a[maxi]);
+		left++;
+		right--;
+	}
+
+}
+
