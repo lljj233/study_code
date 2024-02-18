@@ -148,3 +148,23 @@ void HeadSort(int* a, int n)
 	}
 }
 
+//×îºÃ£ºO(N^2)
+//×î»µ£ºO(N)
+void BubbleSort(int* a, int n)
+{
+	for (int j = 0; j < n; j++)
+	{
+		bool exchange = false;
+		for (int i = 1; i < n - j; i++)
+		{
+			if (a[i - 1] > a[i])
+			{
+				swap(&a[i - 1], &a[i]);
+				exchange = true;
+			}
+		}
+		if (exchange == false)
+			break;
+	}
+}
+
