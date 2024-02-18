@@ -26,11 +26,20 @@ void TestSelectSort()
 	PrintSort(a, sizeof(a) / sizeof(int));
 }
 
+void TestHeadSort()
+{
+	int a[] = { 3,6,9,1,0,4,8,10,2,7,5 };
+	PrintSort(a, sizeof(a) / sizeof(int));
+	HeadSort(a, sizeof(a) / sizeof(int));
+	PrintSort(a, sizeof(a) / sizeof(int));
+}
+
 int main()
 {
 	//TestInsertSort();
 	//TestShellSort();
-	TestSelectSort();
+	//TestSelectSort();
+	TestHeadSort();
 	return 0;
 }
 

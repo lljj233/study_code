@@ -115,3 +115,36 @@ void SelectSort(int* a, int n)
 
 }
 
+void AdjustDown(int* array, int n, int parent)
+{
+	int child = parent * 2 + 1;
+	while (child < n)
+	{
+		if (child + 1 < n && array[child] < array[child + 1])
+			child++;
+		if (array[child] > array[parent])
+		{
+			swap(&array[child], &array[parent]);
+			parent = child;
+			child = parent * 2 + 1;
+		}
+		else
+			break;
+	}
+
+}
+void HeadSort(int* a, int n)
+{
+	for (int i = (n - 1 - 1) / 2; i >= 0; i--)
+	{
+		AdjustDown(a, n, i);
+	}
+	int end = n - 1;
+	while (end > 0)
+	{
+		swap(&a[0], &a[end]);
+		AdjustDown(a, end, 0);
+		end--;
+	}
+}
+
